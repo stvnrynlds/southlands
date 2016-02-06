@@ -1,0 +1,86 @@
+#campuses {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2000;
+  background-color: #e5e5e7;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  &.is-visible {
+    display: block;
+    top: 0;
+  }
+  &.whittier {
+    background-image: url('../img/campuses/whittier-01.jpg');
+  }
+}
+
+.campus-list-wrapper {
+  display: block;
+  text-align: center;
+  list-style: none;
+  margin: 0 auto;
+  max-width: 960px;
+  width: 100%;
+  padding: 20% 0 0 0;
+  &:hover li a {
+    opacity: .25;
+  }
+  &:hover li a:hover {
+    opacity: 1;
+  }
+}
+
+.campus-list-item {
+  display: block;
+  width: 50%;
+  min-width: 100px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0 15px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  position: relative;
+}
+
+@media (min-width: 37.5em) {
+  .campus-list-wrapper {
+    display: table;
+  }
+  .campus-list-item {
+    display: table-cell;
+    width: auto;
+    padding: 30px;
+  }
+}
+
+.campus-intro {
+  color: white;
+  padding: 0 30px;
+  & p {
+    padding-top: 0;
+    font-size: 1.25em;
+  }
+}
+
+.close-campus {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: $dark;
+  font-weight: bold;
+  border: 1px solid $mid;
+  padding: .75em 1em;
+  border-radius: .25em;
+  font-size: .85em;
+  letter-spacing: .15em;
+  cursor: pointer;
+  text-align: right;
+  text-transform: uppercase;
+}

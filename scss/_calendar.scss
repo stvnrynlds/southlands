@@ -1,0 +1,19 @@
+.tribe-events-button-on {
+	background: #232323;
+}
+
+.tribe-events-button-off {
+	&:hover {}
+}
+
+.tribe-events-event { border-bottom: 2px solid #ccc; padding-bottom: 1em; margin-bottom: 1em; padding-bottom: 0;}
+#tribe-events-loop { margin-top: 2em;}
+
+.events-archive .event-day { font-style: normal; font-size: 1em;}
+
+.tribe-events-event-list-meta td {
+	background: none !important;
+}
+
+.tribe-previous,
+.tribe-next {margin-top: 1em;}

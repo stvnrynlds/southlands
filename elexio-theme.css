@@ -1,0 +1,5722 @@
+.amp_p {
+  /* This surrounds the entire portal */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  color: #777;
+  width: 670px;
+  margin: 0px auto 0px auto;
+  padding: 15px 0px 15px 0px; }
+
+.amp_p input[type='text'],
+.amp_p textarea,
+.amp_p_litebox input[type='text'],
+.amp_p_litebox textarea {
+  font-family: Tahoma;
+  font-size: 12px;
+  font-weight: normal;
+  color: #000;
+  padding: 5px 4px 4px 4px;
+  margin: 0px;
+  border: 1px solid #c1c1c1;
+  border-top: 1px solid #848484;
+  border-bottom: 1px solid #e1e1e1;
+  background: url(img/elexio/images/Input_Bg.png) no-repeat left top;
+  height: 15px;
+  width: 100%; }
+
+.amp_p select,
+.amp_p_litebox select {
+  font-family: Tahoma;
+  font-size: 12px;
+  font-weight: normal;
+  color: #000;
+  padding: 3px;
+  margin: 0px;
+  border: 1px solid #c1c1c1;
+  border-top: 1px solid #848484;
+  border-bottom: 1px solid #e1e1e1;
+  background: url(img/elexio/images/Input_Bg.png) no-repeat left top; }
+
+.amp_p_liteboxbg {
+  position: fixed;
+  display: none;
+  background: Black;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  filter: alpha(opacity=55);
+  -moz-opacity: .55;
+  opacity: .55;
+  z-index: 9998; }
+
+.amp_p_loadingbg {
+  color: #7b7b7b;
+  font-family: Arial;
+  font-size: 22px;
+  font-weight: normal;
+  width: 129px;
+  height: 54px;
+  background: url(img/elexio/images/Ajax_Indicator_Bg.png) no-repeat left top;
+  padding: 30px 0px 0px 80px; }
+
+.amp_p_loading {
+  position: absolute;
+  top: 25px;
+  left: 30px;
+  width: 32px;
+  height: 32px;
+  background: url(img/elexio/images/ajax-loader.gif) no-repeat left top; }
+
+.amp_p_invaliddata {
+  border: 1px Solid red; }
+
+INPUT[type='text'].amp_p_invaliddata {
+  border: 1px Solid red; }
+
+/**********/
+/* TopBar */
+/**********/
+.amp_p_topbar {
+  /* This surrounds the menu at the top */ }
+
+.amp_p_topbar_info {
+  text-align: right;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #767676;
+  padding-bottom: 10px; }
+
+.amp_p_topbar_info span {
+  color: #2e72a8;
+  margin-left: 5px;
+  border-left: 1px solid #767676;
+  padding-left: 5px; }
+
+.amp_p_topbar_info span:hover {
+  cursor: pointer;
+  text-decoration: underline; }
+
+/********/
+/* Menu */
+/********/
+.amp_p_menucontainer {
+  /* This surrounds the menu at the top */
+  overflow: hidden;
+  height: 42px;
+  margin: 0px 0px 5px 0px;
+  padding: 0px 0px 0px 58px;
+  background: url(img/elexio/images/Menu_Bg.png) no-repeat center bottom; }
+
+.amp_p_menuitem {
+  display: block;
+  float: left;
+  padding: 0px;
+  margin: 0px 0px 0px 5px;
+  font-size: 1px;
+  text-indent: -10000px;
+  height: 32px; }
+
+.amp_p_menu_myinfo {
+  width: 72px;
+  background: url(img/elexio/images/Menu_MyInfo.png) no-repeat 0px 0px; }
+
+.amp_p_menu_churchdir {
+  width: 119px;
+  background: url(img/elexio/images/Menu_ChurchDir.png) no-repeat 0px 0px; }
+
+.amp_p_menu_groups {
+  width: 94px;
+  background: url(img/elexio/images/Menu_Groups.png) no-repeat 0px 0px; }
+
+.amp_p_menu_ministries {
+  width: 89px;
+  background: url(img/elexio/images/Menu_Ministries.png) no-repeat 0px 0px; }
+
+.amp_p_menu_events {
+  width: 65px;
+  background: url(img/elexio/images/Menu_Events.png) no-repeat 0px 0px; }
+
+.amp_p_menu_giving {
+  width: 70px;
+  background: url(img/elexio/images/Menu_Giving.png) no-repeat 0px 0px; }
+
+.amp_p_menuitem:hover {
+  background-position: 0px -32px; }
+
+.amp_p_menuitem.amp_p_selected {
+  background-position: 0px -64px; }
+
+.amp_p_menuitem.amp_p_selected:hover {
+  background-position: 0px -64px; }
+
+/***********/
+/* Content */
+/***********/
+.amp_p_container {
+  /* This SHOULD surround each of the controls under the menu (but not the menu) */
+  overflow: hidden; }
+
+.amp_p_section {
+  padding: 10px;
+  overflow: hidden;
+  border: 1px solid #bcbcbc;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background: #f7f7f7;
+  background: -webkit-gradient(linear, 0% 10%, 0% 100%, from(white), to(#ededed));
+  background: -moz-linear-gradient(0% 10% 270deg, white, #ededed); }
+
+.amp_p_centertext {
+  text-align: center; }
+
+/**********/
+/* Login */
+/**********/
+.amp_p_container_login {
+  margin: 0px;
+  padding: 20px 0 20px; }
+
+.amp_p_login_box {
+  background: url(img/elexio/images/logback.png) no-repeat center top;
+  margin: auto;
+  width: 399px;
+  height: 305px;
+  overflow: hidden;
+  position: relative; }
+
+.amp_p_login_smallbox {
+  margin: auto;
+  width: 300px; }
+
+.amp_p_login_eulsicon {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  width: 25px;
+  height: 25px; }
+
+#amp_p_forgot {
+  background: none; }
+
+#amp_p_login_username {
+  background: transparent;
+  border: 0px;
+  position: absolute;
+  top: 58px;
+  left: 35px;
+  display: block;
+  font-size: 20px;
+  color: #777777;
+  width: 327px;
+  height: 28px;
+  padding: 7px 0px 5px 0px;
+  outline: none; }
+
+#amp_p_login_password {
+  background: transparent;
+  border: 0px;
+  position: absolute;
+  top: 135px;
+  left: 35px;
+  display: block;
+  font-size: 20px;
+  color: #777777;
+  width: 327px;
+  height: 28px;
+  padding: 7px 0px 5px 0px;
+  outline: none; }
+
+#amp_p_login_remember {
+  position: absolute;
+  top: 200px;
+  left: 25px;
+  color: #7e7e7e;
+  font-size: 12px; }
+
+#amp_p_login_remember input {
+  vertical-align: -2px; }
+
+#amp_p_login_button {
+  position: absolute;
+  top: 195px;
+  left: 285px;
+  height: 35px;
+  width: 87px;
+  background: url(img/elexio/images/Button_Login.png) no-repeat 0px 0px;
+  border: 0px;
+  cursor: pointer; }
+
+#amp_p_login_button:hover {
+  background-position: 0px -35px; }
+
+.amp_p_login_fail {
+  position: absolute;
+  top: 16px;
+  left: 0px;
+  width: 399px;
+  font-size: 14px;
+  color: #f00;
+  text-align: center; }
+
+#amp_p_login_footer {
+  position: absolute;
+  top: 247px;
+  left: 0px;
+  width: 399px;
+  font-size: 11px;
+  color: #7e7e7e;
+  text-align: center; }
+
+#amp_p_login_footer a {
+  padding: 0px 5px 0px 5px;
+  border-left: 1px solid #7e7e7e;
+  color: #7e7e7e;
+  text-decoration: none; }
+
+#amp_p_login_footer a:first-child {
+  border: 0px; }
+
+#amp_p_login_footer a:hover {
+  color: #4883b2;
+  text-decoration: none; }
+
+#amp_p_login_privtos {
+  position: absolute;
+  top: 290px;
+  left: 0px;
+  width: 399px;
+  font-size: 8px;
+  text-transform: uppercase;
+  color: #7e7e7e;
+  text-align: center; }
+
+#amp_p_login_privtos a {
+  color: #7e7e7e;
+  text-decoration: none; }
+
+#amp_p_login_privtos a:hover {
+  text-decoration: underline;
+  cursor: pointer; }
+
+#amp_p_login_privacypolicy {
+  width: 280px; }
+
+#amp_p_login_privacypolicy a {
+  text-decoration: underline;
+  cursor: pointer; }
+
+#amp_p_login_privacypolicy .amp_p_litebox_button_zone {
+  width: 270px; }
+
+/**************/
+/* CreateUser */
+/**************/
+.amp_p_container_createuser {
+  margin: 20px 0 20px; }
+
+.amp_p_createuser_box {
+  margin: auto;
+  width: 400px;
+  height: auto;
+  overflow: hidden;
+  position: relative; }
+
+.amp_p_createuser_title {
+  color: #555;
+  font-size: x-large;
+  margin-bottom: 15px; }
+
+.amp_p_createuser_stepmarker {
+  float: left;
+  width: 133px;
+  height: 30px; }
+
+.amp_p_createuser_stepmarker.amp_p_selected {
+  color: #6486a9; }
+
+.amp_p_createuser_stepmarker1,
+.amp_p_createuser_stepmarker2,
+.amp_p_createuser_stepmarker3 {
+  width: 133px;
+  height: 24px;
+  background: url(img/elexio/images/progress.png) no-repeat; }
+
+.amp_p_createuser_stepmarker1 {
+  background-position: 0 -24px; }
+
+.amp_p_createuser_stepmarker2 {
+  background-position: -133px -24px; }
+
+.amp_p_createuser_stepmarker3 {
+  background-position: -266px -24px;
+  width: 134px; }
+
+.amp_p_selected .amp_p_createuser_stepmarker1,
+.amp_p_selected .amp_p_createuser_stepmarker2,
+.amp_p_selected .amp_p_createuser_stepmarker3 {
+  background: url(img/elexio/images/progress.png) no-repeat; }
+
+.amp_p_selected .amp_p_createuser_stepmarker1 {
+  background-position: 0 0; }
+
+.amp_p_selected .amp_p_createuser_stepmarker2 {
+  background-position: -133px 0; }
+
+.amp_p_selected .amp_p_createuser_stepmarker3 {
+  background-position: -266px 0; }
+
+.amp_p_createuser_content,
+.amp_p_createuser_content_step3 {
+  color: #555;
+  clear: both;
+  font-size: large;
+  margin: 70px 30px 40px 30px; }
+
+.amp_p_createuser_content_step3 {
+  color: #555;
+  clear: both;
+  font-size: large;
+  margin: 70px 0 40px 0; }
+
+.amp_p_createuser_content_step1b {
+  clear: both;
+  font-size: medium;
+  margin: 70px 0 20px 0; }
+
+.amp_p_createuser_content_step1c {
+  clear: both;
+  font-size: medium;
+  margin: 70px 0 20px 0; }
+
+.amp_p_createuser_content_step1c ul {
+  margin: 7px; }
+
+.amp_p_createuser_content_step1c li {
+  padding: 7px 30px 7px 30px;
+  background: url(img/elexio/images/arrow.png) no-repeat 3px 10px;
+  cursor: pointer;
+  list-style-type: none;
+  border: 1px Solid transparent; }
+
+.amp_p_createuser_content_step1c li:hover {
+  border: 1px Solid #e5e5e5; }
+
+.amp_p_createuser_welcome {
+  color: #555;
+  clear: both;
+  font-size: large;
+  margin: 30px 30px 40px 30px; }
+
+.amp_p_createuser_box input[type='radio'] {
+  display: block;
+  float: left;
+  margin: 17px 0 0 0; }
+
+#amp_p_createuser_male_label, #amp_p_createuser_female_label {
+  clear: none;
+  display: block;
+  float: left;
+  padding: 17px 0 0 5px;
+  width: auto; }
+
+.amp_p_createuser_content_step3 input[type='text'], .amp_p_createuser_content_step3 input[type='password'] {
+  float: left;
+  background: #fff;
+  border: #c8c8c8 1px solid;
+  color: #555;
+  font-size: large;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-family: Arial,sans-serif;
+  height: 25px;
+  margin: 5px 0;
+  padding: 8px;
+  width: 240px; }
+
+.amp_p_createuser_content_step3 label {
+  clear: both;
+  color: #555555;
+  float: left;
+  font-size: small;
+  margin: 0 20px 0 0;
+  padding: 15px 0 0 0;
+  text-align: right;
+  width: 120px; }
+
+.amp_p_createuser_buttons {
+  float: right;
+  overflow: hidden; }
+
+.amp_p_createuser_fail {
+  width: 399px;
+  font-size: 14px;
+  color: #f00;
+  text-align: center;
+  clear: both;
+  display: block;
+  padding: 30px 0 0 0; }
+
+.amp_p #amp_p_createuser_email, .amp_p #amp_p_createuser_code {
+  background: #fff;
+  border: #c8c8c8 1px solid;
+  color: #555;
+  font-size: large;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-family: Arial,sans-serif;
+  height: 25px;
+  margin: 5px 0 0 0;
+  padding: 8px; }
+
+.amp_p_createuser_nextbutton,
+.amp_p_createuser_getstartedbutton {
+  background: url(img/elexio/images/next.png) no-repeat top left;
+  border: none;
+  cursor: pointer;
+  display: block;
+  float: left;
+  font-size: 0pt;
+  height: 35px;
+  margin: 0 5px 0 0;
+  text-indent: -9999px;
+  width: 125px; }
+
+.amp_p_createuser_nextbutton:hover, .amp_p_createuser_nextbutton:active {
+  background: url(img/elexio/images/next.png) no-repeat bottom left; }
+
+.amp_p_createuser_getstartedbutton {
+  background: url(img/elexio/images/button_getstarted.png) no-repeat top left;
+  width: 150px; }
+
+.amp_p_createuser_getstartedbutton:hover, amp_p_createuser_getstartedbutton:active {
+  background: url(img/elexio/images/button_getstarted.png) no-repeat bottom left; }
+
+.amp_p_createuser_setupbutton {
+  background: url(img/elexio/images/setup.png) no-repeat top left;
+  border: none;
+  cursor: pointer;
+  display: block;
+  float: left;
+  font-size: 0pt;
+  height: 35px;
+  margin: 0 5px 0 0;
+  text-indent: -9999px;
+  width: 167px; }
+
+.amp_p_createuser_setupbutton:hover, .amp_p_createuser_setupbutton:active {
+  background: url(img/elexio/images/setup.png) no-repeat bottom left; }
+
+.amp_p_createuser_buttons span {
+  display: block;
+  float: left;
+  padding: 10px 0 0 0; }
+
+.amp_p_createuser_buttons a {
+  color: #555;
+  display: block;
+  float: left;
+  padding: 10px 0 0 0; }
+
+.amp_p_createuser_box select {
+  border: #c8c8c8 1px solid;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin: 10px 10px 0 0; }
+
+/**********/
+/* MyInfo */
+/**********/
+.amp_p_myinfo_fmember {
+  float: left;
+  padding: 0px 0px 10px 0px;
+  width: 670px; }
+
+.amp_p_myinfo_fmember span {
+  font-family: Tahoma;
+  font-weight: bold;
+  font-size: 11px;
+  color: #4269a2; }
+
+.amp_p_myinfo_fmember select {
+  font-size: 11px;
+  outline: none;
+  margin-left: 5px; }
+
+.amp_p_events_memberselect {
+  float: right; }
+
+.amp_p_myinfo_changed {
+  float: left;
+  display: inline-block;
+  margin: auto 15px auto 10px;
+  padding: 5px;
+  border: 1px dashed #e8b51a;
+  color: #4269a2;
+  visibility: hidden; }
+
+#amp_p_myinfo_savechanges_top {
+  float: left; }
+
+#amp_p_events_memberselect {
+  float: right;
+  width: 250px; }
+
+.amp_p_myinfo_household {
+  margin: 0px 0px 5px 0px; }
+
+.amp_p_myinfo_household .amp_p_myinfo_pic {
+  float: left;
+  margin: 0px 25px 0px 25px; }
+
+.amp_p_myinfo_personalinfo .amp_p_myinfo_picbox,
+.amp_p_myinfo_household .amp_p_myinfo_picbox {
+  margin: 5px 0px 8px 0px;
+  padding: 4px;
+  border: 1px solid #c3c3c3;
+  background: #fff;
+  -webkit-border-radius: 4px;
+  -webkit-box-shadow: 1px 1px 4px #cccccc;
+  -moz-border-radius: 4px;
+  -moz-box-shadow: 1px 1px 4px #cccccc; }
+
+.amp_p_myinfo_personalinfo .amp_p_myinfo_picbox img {
+  max-height: 150px;
+  max-width: 150px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px; }
+
+.amp_p_myinfo_household .amp_p_myinfo_picbox img {
+  max-height: 250px;
+  max-width: 275px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px; }
+
+.amp_p_myinfo_personalinfo .amp_p_myinfo_picbuttons_edit,
+.amp_p_myinfo_household .amp_p_myinfo_picbuttons_edit {
+  position: relative;
+  float: left;
+  display: inline-block;
+  height: 20px;
+  width: 49px;
+  background: url(img/elexio/images/Button_Edit.png) no-repeat;
+  padding: 0px;
+  overflow: hidden; }
+
+#amp_p_myinfo_country {
+  width: 185px; }
+
+#amp_p_myinfo_upload,
+#amp_p_myinfo_household_upload {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin: 0px;
+  height: 20px;
+  width: 49px;
+  filter: alpha(opacity=1);
+  -moz-opacity: .01;
+  opacity: .01; }
+
+.amp_p_myinfo_personalinfo .amp_p_myinfo_picbuttons_delete,
+.amp_p_myinfo_household .amp_p_myinfo_picbuttons_delete {
+  display: inline-block;
+  float: left;
+  margin-left: 5px;
+  height: 20px;
+  width: 49px;
+  background: url(img/elexio/images/Button_Delete.png) no-repeat; }
+
+.amp_p_myinfo_personalinfo .amp_p_myinfo_picbuttons_delete:hover,
+.amp_p_myinfo_household .amp_p_myinfo_picbuttons_delete:hover {
+  background-position: 0px -20px; }
+
+.amp_p_myinfo_namepart div {
+  white-space: nowrap;
+  margin-bottom: 3px; }
+
+.amp_p_myinfo_namepart span {
+  white-space: nowrap;
+  font-size: 9px;
+  margin-left: 8px; }
+
+.amp_p_myinfo_pinfo_incindir {
+  position: absolute;
+  top: 40px;
+  left: 200px;
+  white-space: nowrap; }
+
+.amp_p_myinfo_pinfo_bdate span,
+.amp_p_myinfo_pinfo_mstatus span,
+.amp_p_myinfo_pinfo_gender span,
+.amp_p_myinfo_pinfo_incindir span {
+  white-space: nowrap;
+  margin-right: 5px; }
+
+.amp_p_myinfo_personalinfo img {
+  vertical-align: bottom;
+  margin: 0px 0px 2px 3px; }
+
+.amp_p_myinfo_personalinfo label {
+  color: #000; }
+
+.amp_p_myinfo_paddress {
+  clear: both;
+  margin-left: 225px; }
+
+.amp_p_myinfo_paddress_content {
+  display: none; }
+
+.amp_p_myinfo_paddress_content * {
+  vertical-align: top; }
+
+.amp_p_myinfo_paddress_content div {
+  margin-top: 8px;
+  vertical-align: top; }
+
+.amp_p_myinfo_paddress_content .amp_p_myinfo_label {
+  display: inline-block;
+  width: 65px;
+  margin-right: 5px;
+  text-align: right; }
+
+.amp_p_myinfo_paddress_content #amp_p_myinfo_paddress_private {
+  margin-left: 65px; }
+
+.amp_p_myinfo_household table {
+  float: left; }
+
+.amp_p_myinfo_household td {
+  vertical-align: top;
+  padding: 0px 0px 4px 0px; }
+
+.amp_p_myinfo_household td span {
+  display: block;
+  padding-bottom: 5px;
+  font-size: 9px; }
+
+.amp_p_myinfo_household .amp_p_myinfo_label {
+  white-space: nowrap;
+  text-align: right;
+  padding: 5px 5px 0px 0px;
+  display: block;
+  min-height: 27px; }
+
+.amp_p_myinfo_household .amp_p_myinfo_myinfo_isprivate {
+  display: inline-block; }
+
+.amp_p_myinfo_household .amp_p_myinfo_commethods_private {
+  display: inline-block;
+  width: 30px;
+  height: 12px;
+  vertical-align: middle;
+  padding: 0; }
+
+.amp_p_myinfo_comms {
+  margin: 0px 0px 5px 0px; }
+
+.amp_p_myinfo_lists {
+  margin: 0px 0px 5px 0px; }
+
+.amp_p_myinfo_comms table,
+.amp_p_myinfo_lists table {
+  width: 100%;
+  border: 1px solid #848484; }
+
+.amp_p_myinfo_comms table thead td,
+.amp_p_myinfo_lists table thead td {
+  padding: 10px 8px 10px 8px;
+  color: #4269a2;
+  font-size: 10px;
+  font-weight: bold;
+  background: #d1dbe8;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#bbc9dd), to(#eff2f7));
+  background: -moz-linear-gradient(0% 0% 270deg, #bbc9dd, #eff2f7);
+  border-left: 1px solid #848484; }
+
+.amp_p_myinfo_comms table thead td:first-child,
+.amp_p_myinfo_lists table thead td:first-child {
+  border-left: 0px; }
+
+.amp_p_myinfo_comms table tbody tr td,
+.amp_p_myinfo_lists table tbody tr td {
+  padding: 4px;
+  text-align: center;
+  border-top: 1px solid #848484;
+  border-left: 1px solid #848484;
+  background: #fff;
+  min-width: 22px; }
+
+.amp_p_myinfo_comms table tbody tr.amp_p_myinfo_altrow td,
+.amp_p_myinfo_lists table tbody tr.amp_p_myinfo_altrow td {
+  background: #f1f1f1; }
+
+.amp_p_myinfo_comms table tbody td div,
+.amp_p_myinfo_lists table tbody td div {
+  color: #000;
+  text-align: left; }
+
+.amp_p_myinfo_comms table tbody td:first-child,
+.amp_p_myinfo_lists table tbody td:first-child {
+  border-left: 0px; }
+
+.amp_p_myinfo_comms table tbody td select {
+  width: 108px; }
+
+.amp_p_myinfo_comms table tbody td input[type='text'] {
+  width: 368px; }
+
+.amp_p_myinfo_comms_delete {
+  width: 49px;
+  height: 20px;
+  background: url(img/elexio/images/Button_Delete.png) no-repeat; }
+
+.amp_p_myinfo_comms_delete:hover {
+  background-position: 0px -20px; }
+
+.amp_p_myinfo_comms_optout {
+  color: black;
+  padding-top: 3px; }
+
+.amp_p_myinfo_comms_optout label {
+  vertical-align: top; }
+
+.amp_p_myinfo_comms_add_container {
+  position: relative;
+  height: 28px; }
+
+.amp_p_myinfo_comms_add {
+  position: absolute;
+  top: 6px;
+  right: 4px;
+  width: 49px;
+  height: 20px;
+  background: url(img/elexio/images/Button_Add.png) no-repeat 0px 0px; }
+
+.amp_p_myinfo_comms_add:hover {
+  background-position: 0px -20px; }
+
+.amp_p_myinfo_commethods_priority {
+  height: 12px;
+  background: url(img/elexio/images/Icon_Defaults.png) no-repeat center -12px; }
+
+.amp_p_myinfo_default {
+  background-position: center 0px; }
+
+.amp_p_myinfo_commethods_private {
+  height: 12px;
+  background: url(img/elexio/images/Icon_Privacy.png) no-repeat center 0px; }
+
+.amp_p_myinfo_private {
+  background-position: center -12px; }
+
+.amp_p_myinfo_changepassword {
+  margin: 0 0 10px; }
+
+.amp_p_myinfo_changepassword {
+  margin: 0px 0px 10px 0px; }
+
+.amp_p_myinfo_savechanges {
+  display: inline-block;
+  vertical-align: -6px;
+  width: 131px;
+  height: 21px;
+  background: url(img/elexio/images/Button_SaveChanges.png) no-repeat 0px 0px;
+  cursor: pointer; }
+
+.amp_p_myinfo_savechanges:hover {
+  background-position: 0px -21px; }
+
+.amp_p_myinfo_passwordrequired {
+  display: none;
+  width: 475px;
+  height: 240px;
+  position: relative; }
+
+.amp_p_myinfo_passwordrequired_content {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 415px;
+  height: 180px;
+  padding: 20px;
+  margin: 10px;
+  background: #f7f7f7;
+  background: -webkit-gradient(linear, 0% 10%, 0% 100%, from(white), to(#ededed));
+  background: -moz-linear-gradient(0% 10% 270deg, white, #ededed);
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  overflow: hidden; }
+
+.amp_p_myinfo_passwordrequired_content label {
+  display: inline-block;
+  height: 25px;
+  vertical-align: middle; }
+
+#amp_p_myinfo_oldpassword {
+  width: 200px;
+  margin-top: -9px;
+  margin-left: 5px;
+  vertical-align: middle; }
+
+.amp_p_myinfo_passwordrequired_item {
+  margin-top: 30px;
+  margin-bottom: 20px; }
+
+/**************/
+/* Church Dir */
+/**************/
+.amp_p_container_cdir {
+  position: relative; }
+
+.amp_p_cdir_search {
+  float: left;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  height: 26px;
+  width: 655px; }
+
+.amp_p_cdir_search_field {
+  float: left; }
+
+.amp_p_cdir_search_button {
+  display: inline-block;
+  float: left;
+  width: 72px;
+  height: 21px;
+  background: url(img/elexio/images/Button_Search.png) no-repeat 0px 0px;
+  margin: 3px 5px 0;
+  cursor: pointer; }
+
+.amp_p_cdir_search_button:hover {
+  background-position: 0px -21px; }
+
+#amp_p_cdir_search_field_text {
+  float: left;
+  padding: 6px 0 0 3px; }
+
+.amp_p_cdir_tabs {
+  height: 15px;
+  padding-left: 10px;
+  overflow: hidden;
+  position: absolute;
+  top: 41px;
+  left: 0px;
+  margin: 0;
+  width: 660px;
+  z-index: 100; }
+
+.amp_p_cdir_tableft {
+  float: left;
+  height: 14px;
+  background: url(img/elexio/images/Dir_Tab_Left.png) no-repeat 0px 0px;
+  padding: 1px 2px 0px 6px;
+  color: #585858;
+  font-size: 10px;
+  text-transform: uppercase;
+  overflow: hidden;
+  cursor: pointer; }
+
+.amp_p_selected .amp_p_cdir_tableft {
+  background-position: 0px -15px; }
+
+.amp_p_cdir_tabright {
+  float: left;
+  height: 15px;
+  width: 4px;
+  background: url(img/elexio/images/Dir_Tab_Right.png) no-repeat 0px 0px;
+  margin-right: 2px;
+  cursor: pointer; }
+
+.amp_p_selected .amp_p_cdir_tabright {
+  background-position: 0px -15px; }
+
+.amp_p_cdir_entries {
+  border: 1px solid #bcbcbc;
+  clear: both;
+  float: left;
+  margin-top: 13px;
+  padding: 0;
+  width: 668px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px; }
+
+.amp_p_cdir_entry {
+  position: relative;
+  padding: 10px;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid white;
+  background: #fff;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(#ebebeb));
+  background: -moz-linear-gradient(0% 0% 270deg, white, #ebebeb);
+  overflow: hidden; }
+
+.amp_p_cdir_entry:first-child {
+  border-top: 0px;
+  -moz-border-radius-topright: 6px;
+  -moz-border-radius-topleft: 6px;
+  -webkit-border-top-right-radius: 6px;
+  -webkit-border-top-left-radius: 6px; }
+
+.amp_p_cdir_entry_left {
+  float: left; }
+
+.amp_p_cdir_entry_right {
+  float: right;
+  width: 375px;
+  margin-bottom: 25px; }
+
+.amp_p_cdir_entry_housename {
+  font-size: 14px;
+  font-weight: bold;
+  color: #4269a2;
+  cursor: pointer; }
+
+.amp_p_cdir_entry_houseaddr {
+  font-size: 12px;
+  color: #4269a2;
+  text-decoration: underline;
+  cursor: pointer; }
+
+.amp_p_cdir_entry_homephone {
+  padding: 0px 0px 0px 20px;
+  margin-top: 5px;
+  background: url(img/elexio/images/Icon_HomePhone.png) no-repeat left center; }
+
+.amp_p_cdir_entry_homeemail {
+  padding: 0px 0px 0px 20px;
+  margin-top: 5px;
+  background: url(img/elexio/images/Email.png) no-repeat left center; }
+
+.amp_p_cdir_entry_mobilephone {
+  padding: 0px 0px 0px 20px;
+  margin-top: 5px;
+  background: url(img/elexio/images/Icon_MobilePhone.png) no-repeat left center; }
+
+.amp_p_cdir_entry_familypic {
+  margin: 10px 0px 0px 0px;
+  padding: 4px;
+  border: 1px solid #c3c3c3;
+  background: #fff;
+  -webkit-border-radius: 4px;
+  -webkit-box-shadow: 1px 1px 4px #cccccc;
+  -moz-border-radius: 4px;
+  -moz-box-shadow: 1px 1px 4px #cccccc; }
+
+.amp_p_cdir_entry_familypic img {
+  max-width: 250px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px; }
+
+.amp_p_cdir_entry_person {
+  padding: 6px;
+  overflow: hidden;
+  border: 1px solid #bcbcbc;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  margin-bottom: 8px;
+  background: #f3f3f3;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(#ebebeb));
+  background: -moz-linear-gradient(0% 0% 270deg, white, #ebebeb); }
+
+.amp_p_cdir_entry_person_left {
+  float: left; }
+
+.amp_p_cdir_entry_person_right {
+  float: right; }
+
+.amp_p_cdir_entry_person_name {
+  font-size: 14px;
+  font-weight: bold;
+  color: #4269a2; }
+
+.amp_p_cdir_entry_person_email,
+.amp_p_cdir_entry_person_homephone,
+.amp_p_cdir_entry_person_mobilephone,
+.amp_p_cdir_entry_person_work {
+  margin-top: 3px;
+  padding-left: 5px; }
+
+.amp_p_cdir_entry_person_email span {
+  color: #4269a2;
+  text-decoration: underline;
+  cursor: pointer; }
+
+.amp_p_cdir_entry_person_social {
+  overflow: hidden;
+  padding-left: 5px;
+  margin-top: 5px; }
+
+.amp_p_cdir_entry_person_social div {
+  float: left;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  margin-right: 3px; }
+
+.amp_p_cdir_entry_person_social_facebook {
+  background: url(img/elexio/images/Dir_SocialIcons.png) no-repeat 0px -20px; }
+
+.amp_p_cdir_entry_person_social_myspace {
+  background: url(img/elexio/images/Dir_SocialIcons.png) no-repeat 0px -80px; }
+
+.amp_p_cdir_entry_person_social_twitter {
+  background: url(img/elexio/images/Dir_SocialIcons.png) no-repeat 0px -100px; }
+
+.amp_p_cdir_entry_person_social_blog {
+  background: url(img/elexio/images/Dir_SocialIcons.png) no-repeat 0px 0px; }
+
+.amp_p_cdir_entry_person_social_linkedin {
+  background: url(img/elexio/images/Dir_SocialIcons.png) no-repeat 0px -60px; }
+
+.amp_p_cdir_entry_person_social_flickr {
+  background: url(img/elexio/images/Dir_SocialIcons.png) no-repeat 0px -40px; }
+
+.amp_p_cdir_entry_person_social_youtube {
+  background: url(img/elexio/images/Dir_SocialIcons.png) no-repeat 0px -120px; }
+
+.amp_p_cdir_entry_person_addr_wrap {
+  margin-bottom: 10px; }
+
+.amp_p_cdir_entry_person_addr {
+  font-size: 12px;
+  color: #4269a2;
+  text-decoration: underline;
+  cursor: pointer; }
+
+.amp_p_cdir_entry_person_pic {
+  margin: 0px 0px 0px 10px;
+  padding: 4px;
+  border: 1px solid #c3c3c3;
+  background: #fff;
+  -webkit-border-radius: 4px;
+  -webkit-box-shadow: 1px 1px 4px #cccccc;
+  -moz-border-radius: 4px;
+  -moz-box-shadow: 1px 1px 4px #cccccc; }
+
+.amp_p_cdir_entry_person_pic img {
+  max-width: 125px;
+  max-height: 125px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px; }
+
+.amp_p_cdir_entry_more {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  padding: 0px 0px 0px 16px;
+  background: url(img/elexio/images/Icon_Expand.png) no-repeat left center;
+  cursor: pointer; }
+
+.amp_p_cdir_entry_less {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  padding: 0px 0px 0px 16px;
+  background: url(img/elexio/images/Icon_Collapse.png) no-repeat left center;
+  cursor: pointer; }
+
+.amp_p_cdir_paging {
+  border-top: 1px solid #ebebeb;
+  padding: 10px; }
+
+.amp_p_cdir_paging span {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-left: 8px;
+  cursor: pointer; }
+
+.amp_p_cdir_paging_cur {
+  color: #4269a2; }
+
+.amp_p_cdir_paging_l,
+.amp_p_cdir_paging_r {
+  width: 16px;
+  height: 15px;
+  background: url(img/elexio/images/Dir_Pager.png) 0px 0px; }
+
+.amp_p_cdir_paging_r {
+  background-position: 0px -15px; }
+
+/**********/
+/* Groups */
+/**********/
+.amp_p_groups_printer a {
+  background: url(img/elexio/images/Button_Printer_Friendly.png) top left no-repeat;
+  display: block;
+  float: right;
+  width: 153px;
+  height: 20px;
+  text-indent: -99999px; }
+
+.amp_p_groups_printer a:hover {
+  background-position: bottom left; }
+
+#amp_p_groups_printer {
+  display: block;
+  width: 153px;
+  height: 20px;
+  overflow: hidden; }
+
+#amp_p_group_info_zone {
+  display: block;
+  font-family: Arial, Helvetica, Sans-Serif;
+  width: 500px;
+  margin-bottom: 20px; }
+
+#amp_p_group_info_zone p {
+  margin: 0 0 12px;
+  line-height: 1.5;
+  font-size: 11px; }
+
+#amp_p_group_name {
+  font-size: 16px;
+  width: 205px; }
+
+.amp_p_groups_left {
+  float: left;
+  width: 150px; }
+
+.amp_p_groups_right {
+  float: right;
+  margin-left: 10px;
+  width: 510px; }
+
+.amp_p_groups_menu {
+  padding: 15px 9px 10px 0px;
+  background: url(img/elexio/images/Groups_MenuBg_Top.png) repeat-y right top; }
+
+.amp_p_groups_menubottom {
+  height: 20px;
+  background: url(img/elexio/images/Groups_MenuBg_Bottom.png) no-repeat right top; }
+
+.amp_p_groups_menuitems {
+  padding-left: 3px;
+  overflow: hidden; }
+
+.amp_p_groups_menuitem {
+  padding: 4px 15px 4px 6px;
+  text-align: right;
+  margin-top: 5px;
+  font-size: 11px;
+  cursor: pointer; }
+
+.amp_p_groups_menuitem:hover {
+  color: #4269a2; }
+
+.amp_p_groups_menuitem.amp_p_selected {
+  color: #4269a2;
+  border: 1px solid #848484;
+  border-right: 0px;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  background: #fff;
+  background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(#c9d4e4), to(white));
+  background: -moz-linear-gradient(0% 100% 0deg, #c9d4e4, white);
+  -webkit-box-shadow: 1px 1px 4px #dfdfdf;
+  -moz-box-shadow: 1px 1px 4px #dfdfdf; }
+
+.amp_p_groups_findgroup {
+  margin: 25px auto 0px auto;
+  width: 88px;
+  height: 20px;
+  background: url(img/elexio/images/Button_FindGroup.png); }
+
+.amp_p_groups_findgroup:hover {
+  background-position: 0px -20px; }
+
+#group_members_title {
+  display: block;
+  height: 20px;
+  padding: 0;
+  position: relative;
+  width: 500px; }
+
+.amp_p_groups_emailall {
+  display: block;
+  position: absolute;
+  width: 121px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  right: 0;
+  background: url(img/elexio/images/Button_EmailMembers.png);
+  cursor: default; }
+
+.amp_p_groups_emailall:hover {
+  background-position: 0px -20px; }
+
+.amp_p_groups_enterattendance {
+  display: block;
+  position: absolute;
+  width: 151px;
+  height: 20px;
+  top: 0;
+  right: 125px;
+  background: url(img/elexio/images/Button_EnterGroupAttendance.png);
+  cursor: default; }
+
+.amp_p_groups_enterattendance:hover {
+  background-position: 0px -20px; }
+
+.amp_p_groups_members {
+  width: 500px;
+  border: 1px solid #848484;
+  margin: 5px 0px 25px 0px; }
+
+.amp_p_groups_members thead td {
+  padding: 10px 8px 10px 8px;
+  color: #4269a2;
+  font-size: 10px;
+  font-weight: bold;
+  background: #d1dbe8;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#bbc9dd), to(#eff2f7));
+  background: -moz-linear-gradient(0% 0% 270deg, #bbc9dd, #eff2f7);
+  border-left: 1px solid #848484; }
+
+.amp_p_groups_members thead td:first-child {
+  border-left: 0px; }
+
+.amp_p_groups_members tbody tr td {
+  padding: 8px;
+  color: #000;
+  border-top: 1px solid #848484;
+  border-left: 1px solid #848484;
+  background: #fff; }
+
+.amp_p_groups_members tbody tr td:first-child {
+  border-left: 0px; }
+
+.amp_p_groups_members tbody tr.amp_p_groups_altrow td {
+  background: #f1f1f1; }
+
+.amp_p_groups_members tbody td a {
+  color: #4269a2;
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: Tahoma, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  background: transparent; }
+
+.amp_p_groups_links {
+  width: 500px; }
+
+.amp_p_groups_links td {
+  padding: 2px 4px; }
+
+.amp_p_groups_addfieldrow {
+  float: right;
+  margin: 0 267px 4px 0; }
+
+.amp_p_groups_nolinks {
+  display: none; }
+
+.amp_p_groups_linkdelete {
+  width: 56px; }
+
+.amp_p_groups_linkdelete div {
+  height: 20px;
+  width: 49px;
+  background: url(img/elexio/images/Button_Delete.png) no-repeat; }
+
+.amp_p_groups_linkdelete div:hover {
+  background-position: 0px -20px; }
+
+.amp_p_groups_links a {
+  color: #4269a2;
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: Tahoma, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  background: transparent; }
+
+.amp_p_groups_linkadd {
+  width: 56px; }
+
+.amp_p_groups_linkadd div {
+  width: 49px;
+  height: 20px;
+  background: url(img/elexio/images/Button_Add.png) no-repeat; }
+
+.amp_p_groups_linkadd div:hover {
+  background-position: 0px -20px; }
+
+.amp_p_groups_nogroups {
+  text-align: center; }
+
+/**************/
+/* Ministries */
+/**************/
+.amp_p_ministries_left {
+  float: left;
+  width: 150px; }
+
+.amp_p_ministries_right {
+  position: relative;
+  float: left;
+  margin-left: 10px; }
+
+.amp_p_ministries_menu {
+  padding: 15px 9px 10px 0px;
+  background: url(img/elexio/images/Groups_MenuBg_Top.png) repeat-y right top; }
+
+.amp_p_ministries_menubottom {
+  height: 20px;
+  background: url(img/elexio/images/Groups_MenuBg_Bottom.png) no-repeat right top; }
+
+.amp_p_ministries_menuitems {
+  padding-left: 3px;
+  overflow: hidden; }
+
+.amp_p_ministries_menuitem {
+  padding: 4px 15px 4px 6px;
+  text-align: right;
+  margin-top: 5px;
+  font-size: 11px;
+  cursor: pointer; }
+
+.amp_p_ministries_menuitem:hover {
+  color: #4269a2; }
+
+.amp_p_ministries_menuitem.amp_p_selected {
+  color: #4269a2;
+  border: 1px solid #848484;
+  border-right: 0px;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  background: #fff;
+  background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(#c9d4e4), to(white));
+  background: -moz-linear-gradient(0% 100% 0deg, #c9d4e4, white);
+  -webkit-box-shadow: 1px 1px 4px #dfdfdf;
+  -moz-box-shadow: 1px 1px 4px #dfdfdf; }
+
+.amp_p_ministries_findgroup {
+  margin: 25px auto 0px auto;
+  width: 88px;
+  height: 20px;
+  background: url(img/elexio/images/Button_FindGroup.png);
+  cursor: pointer; }
+
+.amp_p_ministries_emailall {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  width: 121px;
+  height: 20px;
+  background: url(img/elexio/images/Button_EmailMembers.png);
+  cursor: default; }
+
+.amp_p_ministries_emailall:hover {
+  background-position: 0px -20px; }
+
+.amp_p_ministries_members {
+  width: 500px;
+  border: 1px solid #848484;
+  margin: 5px 0px 25px 0px; }
+
+.amp_p_ministries_members thead td {
+  padding: 10px 8px 10px 8px;
+  color: #4269a2;
+  font-size: 10px;
+  font-weight: bold;
+  background: #d1dbe8;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#bbc9dd), to(#eff2f7));
+  background: -moz-linear-gradient(0% 0% 270deg, #bbc9dd, #eff2f7);
+  border-left: 1px solid #848484; }
+
+.amp_p_ministries_members thead td:first-child {
+  border-left: 0px; }
+
+.amp_p_ministries_members tbody tr td {
+  padding: 8px;
+  color: #000;
+  border-top: 1px solid #848484;
+  border-left: 1px solid #848484;
+  background: #fff; }
+
+.amp_p_ministries_members tbody tr td:first-child {
+  border-left: 0px; }
+
+.amp_p_ministries_members tbody tr.amp_p_ministries_altrow td {
+  background: #f1f1f1; }
+
+.amp_p_ministries_members tbody td a {
+  color: #4269a2;
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: Tahoma, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  background: transparent; }
+
+.amp_p_ministries_links {
+  width: 500px; }
+
+.amp_p_ministries_links td {
+  padding: 4px; }
+
+.amp_p_ministries_nolinks {
+  display: none; }
+
+.amp_p_ministries_linkdelete {
+  width: 56px; }
+
+.amp_p_ministries_linkdelete div {
+  height: 20px;
+  width: 49px;
+  background: url(img/elexio/images/Button_Delete.png) no-repeat; }
+
+.amp_p_ministries_linkdelete div:hover {
+  background-position: 0px -20px; }
+
+.amp_p_ministries_links a {
+  color: #4269a2;
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: Tahoma, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  background: transparent; }
+
+.amp_p_ministries_linkadd {
+  width: 56px; }
+
+.amp_p_ministries_linkadd div {
+  width: 49px;
+  height: 20px;
+  background: url(img/elexio/images/Button_Add.png) no-repeat; }
+
+.amp_p_ministries_linkadd div:hover {
+  background-position: 0px -20px; }
+
+.amp_p_ministries_noministries {
+  text-align: center; }
+
+/**********/
+/* Events */
+/**********/
+.amp_p_events_upcoming {
+  width: 660px;
+  margin: 0 0 20px; }
+
+.amp_p_events_upcoming tbody tr td {
+  padding: 10px;
+  color: #000;
+  border-bottom: 1px solid #e0e0e0; }
+
+.amp_p_events_upcoming_date {
+  width: 52px;
+  border: 0;
+  padding: 0; }
+
+.amp_p_events_upcoming_infoarea {
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-weight: normal;
+  font-size: 11px;
+  color: #777777;
+  width: 450px; }
+
+.amp_p_events_upcoming_date {
+  background: url(img/elexio/images/calendar_icon.png) top left no-repeat;
+  display: block;
+  height: 49px;
+  width: 51px; }
+
+.amp_p_events_upcoming_month {
+  display: block;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 2px 0px 0 3px;
+  height: 17px;
+  width: 39px;
+  overflow: hidden;
+  text-align: center; }
+
+.amp_p_events_upcoming_day {
+  display: block;
+  color: #717171;
+  padding: 0;
+  height: 20px;
+  width: 48px;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center; }
+
+.amp_p_events_list_title_ue {
+  float: left;
+  font-size: 12px;
+  font-weight: bold;
+  color: #3c3c3c;
+  width: 300px; }
+
+.amp_p_events_list_time_ue {
+  float: right;
+  font-size: 11px;
+  font-weight: bold;
+  font-style: italic;
+  color: #777777;
+  text-align: right;
+  width: 145px; }
+
+.amp_p_events_list_description_ue {
+  float: left;
+  width: 450px;
+  padding: 2px 0 4px;
+  text-align: left; }
+
+.amp_p_events_list_cost_ue {
+  color: #3c3c3c;
+  float: left;
+  width: 200px; }
+
+.amp_p_events_list_location_ue {
+  color: #3c3c3c;
+  float: right;
+  text-align: right;
+  width: 245px; }
+
+.amp_p_events_list_register_button:hover {
+  background-position: 0 -21px; }
+
+.amp_p_events_list_unregister_button {
+  background: url(img/elexio/images/Button_Unregister.png) top left no-repeat;
+  height: 21px;
+  width: 97px;
+  display: block;
+  text-indent: -9999px; }
+
+.amp_p_events_list_unregister_button:hover {
+  background-position: 0 -21px; }
+
+/******** REGISTER LITEBOX STYLES ************/
+.amp_p_litebox_register_description {
+  width: 530px;
+  padding: 0 0 10px;
+  text-align: left;
+  font-size: 11px;
+  color: #777777; }
+
+.amp_p_litebox_register_wrapper {
+  background: #f4f4f4;
+  border: #e0e0e0 1px solid;
+  float: left;
+  width: 428px;
+  height: 250px;
+  margin-bottom: 10px;
+  overflow-y: auto;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  padding: 25px 50px; }
+
+.amp_p_litebox_familymember {
+  display: block;
+  float: left;
+  width: 149px; }
+
+.amp_p_litebox_register_button_zone {
+  position: absolute;
+  padding: 0;
+  width: 530px;
+  height: 21px;
+  left: 30px;
+  bottom: 30px; }
+
+.amp_p_litebox_button_cancel {
+  background: url(img/elexio/images/Button_Cancel.png) top left no-repeat;
+  float: right;
+  height: 21px;
+  width: 72px;
+  display: block;
+  margin-left: 3px;
+  text-indent: -9999px;
+  cursor: pointer; }
+
+.amp_p_litebox_button_cancel:hover {
+  background-position: 0 -21px; }
+
+.amp_p_litebox_button_ok {
+  background: url(img/elexio/images/Button_ok.png) top left no-repeat;
+  float: right;
+  height: 21px;
+  width: 72px;
+  display: block;
+  text-indent: -9999px; }
+
+.amp_p_litebox_button_ok:hover {
+  background-position: 0 -21px; }
+
+.amp_p_litebox_button_reset {
+  background: url(img/elexio/images/Button_Reset.png) top left no-repeat;
+  float: right;
+  height: 21px;
+  width: 72px;
+  display: block;
+  margin-left: 3px;
+  text-indent: -9999px; }
+
+.amp_p_litebox_button_reset:hover {
+  background-position: 0 -21px; }
+
+.amp_p_litebox_button_save {
+  background: url(img/elexio/images/Button_Save.png) top left no-repeat;
+  float: right;
+  height: 21px;
+  width: 72px;
+  display: block;
+  margin-left: 3px;
+  text-indent: -9999px; }
+
+.amp_p_litebox_button_save:hover {
+  background-position: 0 -21px; }
+
+.amp_p_clear {
+  clear: both;
+  display: none; }
+
+/*********************************************/
+.amp_p_events_filter {
+  padding: 0px 0px 15px 0px; }
+
+.amp_p_events_filter span {
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-weight: normal;
+  font-size: 12px;
+  color: #777777; }
+
+.amp_p_events_filter select {
+  font-size: 11px;
+  outline: none;
+  margin-left: 5px; }
+
+.amp_p_events_history {
+  width: 665px;
+  border: 1px solid #848484;
+  margin: 5px 0px 25px 0px; }
+
+.amp_p_events_history thead td {
+  padding: 10px 8px 10px 8px;
+  color: #4269a2;
+  font-size: 10px;
+  font-weight: bold;
+  background: #d1dbe8;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#bbc9dd), to(#eff2f7));
+  background: -moz-linear-gradient(0% 0% 270deg, #bbc9dd, #eff2f7);
+  border-left: 1px solid #848484; }
+
+.amp_p_events_history thead td:first-child {
+  border-left: 0px; }
+
+.amp_p_events_history tbody tr td {
+  padding: 8px;
+  color: #000;
+  border-top: 1px solid #848484;
+  border-left: 1px solid #848484;
+  background: #fff; }
+
+.amp_p_events_history tbody tr td:first-child {
+  border-left: 0px; }
+
+.amp_p_events_history tbody tr.amp_p_events_altrow td {
+  background: #f1f1f1; }
+
+.amp_p_events_history tbody td .amp_p_events_list_title {
+  font-weight: bold; }
+
+.amp_p_events_history tbody td .amp_p_events_list_description {
+  font-style: italic; }
+
+.amp_p_events_unregistercontent {
+  float: left;
+  padding: 10px;
+  border: 1px Solid black;
+  background: White;
+  width: 300px; }
+
+/**********/
+/* Giving */
+/**********/
+.amp_p_giving_give {
+  width: 670px;
+  height: 87px;
+  margin: 5px auto 15px auto;
+  cursor: pointer;
+  background: url(img/elexio/images/ClickHereToGiveNow.png) center center no-repeat; }
+
+div.amp_p_giving_scheduled {
+  margin: 0px 0px 5px 0px; }
+
+div.amp_p_giving_scheduled_hidden {
+  margin: 5px 0px 10px 0px;
+  text-align: center; }
+
+table.amp_p_giving_scheduled {
+  width: 645px;
+  border: 1px solid #848484; }
+
+table.amp_p_giving_scheduled > thead > tr > td {
+  padding: 10px 8px 10px 8px;
+  color: #4269a2;
+  font-size: 10px;
+  font-weight: bold;
+  background: #d1dbe8;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#bbc9dd), to(#eff2f7));
+  background: -moz-linear-gradient(0% 0% 270deg, #bbc9dd, #eff2f7);
+  border-left: 1px solid #848484; }
+
+table.amp_p_giving_scheduled > thead > tr > td:first-child {
+  border-left: 0px; }
+
+table.amp_p_giving_scheduled > tbody > tr > td {
+  padding: 8px;
+  color: #000;
+  border-top: 1px solid #848484;
+  border-left: 1px solid #848484;
+  background: #fff;
+  vertical-align: top; }
+
+table.amp_p_giving_scheduled > tbody > tr > td:first-child {
+  border-left: 0px; }
+
+table.amp_p_giving_scheduled > tbody > tr.amp_p_giving_altrow > td {
+  background: #f1f1f1; }
+
+table.amp_p_giving_designations td {
+  padding: 0px 3px 3px 3px;
+  vertical-align: top; }
+
+table.amp_p_giving_scheduled > tbody > tr > td.amp_p_giving_amount {
+  text-align: right; }
+
+table.amp_p_giving_scheduled > tbody > td a {
+  color: #4269a2;
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: Tahoma, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  background: transparent; }
+
+table.amp_p_giving_history {
+  width: 645px;
+  border: 1px solid #848484; }
+
+div.amp_p_giving_history_hidden {
+  margin: 5px 0px 10px 0px;
+  text-align: center;
+  clear: both; }
+
+table.amp_p_giving_history {
+  clear: both; }
+
+table.amp_p_giving_history > thead > tr > td {
+  padding: 10px 8px 10px 8px;
+  color: #4269a2;
+  font-size: 10px;
+  font-weight: bold;
+  background: #d1dbe8;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#bbc9dd), to(#eff2f7));
+  background: -moz-linear-gradient(0% 0% 270deg, #bbc9dd, #eff2f7);
+  border-left: 1px solid #848484; }
+
+table.amp_p_giving_history > thead > tr > td:first-child {
+  border-left: 0px; }
+
+table.amp_p_giving_history > tbody > tr > td {
+  padding: 8px;
+  color: #000;
+  border-top: 1px solid #848484;
+  border-left: 1px solid #848484;
+  background: #fff;
+  vertical-align: top; }
+
+table.amp_p_giving_history > tbody > tr > td:first-child {
+  border-left: 0px; }
+
+table.amp_p_giving_history > tbody > tr.amp_p_giving_altrow > td {
+  background: #f1f1f1; }
+
+table.amp_p_giving_history > tbody > tr > td.amp_p_giving_amount {
+  text-align: right; }
+
+.amp_p_giving_totalrow td {
+  text-align: right; }
+
+.amp_p_giving_totalrow td span {
+  color: #4269a2;
+  font-weight: bold; }
+
+.amp_p_giving_totalrow td.amp_p_giving_amount {
+  text-align: right;
+  font-weight: bold; }
+
+.amp_p_giving_historytitle {
+  float: left;
+  padding-top: 2px; }
+
+.amp_p_giving_historyrange {
+  float: left;
+  margin-bottom: 12px; }
+
+.amp_p_giving_historyrange div {
+  float: left;
+  margin-left: 10px; }
+
+.amp_p_checkicon {
+  background: url(img/elexio/images/checkicon.jpg);
+  width: 28px;
+  height: 14px;
+  margin-right: 5px;
+  display: inline-block;
+  cursor: pointer; }
+
+.amp_p_giving_checklitebox {
+  height: 100%;
+  padding: 10px 5px;
+  overflow: hidden;
+  border: 1px solid #bcbcbc;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background: #f7f7f7;
+  background: -webkit-gradient(linear, 0% 10%, 0% 100%, from(white), to(#ededed));
+  background: -moz-linear-gradient(0% 10% 270deg, white, #ededed); }
+
+.amp_p_giving_checklitebox img {
+  display: block;
+  margin: 0px 5px 10px 5px; }
+
+.amp_p_giving_checklitebox .amp_p_litebox_button_ok {
+  display: block;
+  margin: 0px auto 0px auto;
+  float: none; }
+
+.amp_p_giving_print {
+  display: inline-block;
+  vertical-align: -6px;
+  width: 100px;
+  height: 21px;
+  background: url(img/elexio/images/Button_Print.png) no-repeat 0px 0px;
+  cursor: pointer;
+  float: right; }
+
+.amp_p_giving_print:hover {
+  background-position: 0px -21px; }
+
+/***************/
+/* Give Online */
+/***************/
+.amp_p_container_giveonline {
+  width: 530px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.amp_p_giveonline_paymentmethod {
+  display: block;
+  float: left;
+  margin: 0; }
+
+.amp_p_giveonline_notice {
+  margin: 10px 0 15px; }
+
+.amp_p_giveonline_paymentmethods {
+  float: left;
+  margin: 0 0 5px 0;
+  padding: 0;
+  width: 530px; }
+
+.amp_p_giveonline_acct_add {
+  display: block;
+  float: left;
+  vertical-align: middle;
+  width: 49px;
+  height: 20px;
+  margin: auto auto 0px 8px;
+  background: url(img/elexio/images/Button_Add.png) no-repeat; }
+
+.amp_p_giveonline_acct_add:hover {
+  background-position: 0px -20px; }
+
+.amp_p_giveonline_acct_delete {
+  display: block;
+  float: left;
+  vertical-align: middle;
+  width: 49px;
+  height: 20px;
+  margin: auto auto 0px 5px;
+  background: url(img/elexio/images/Button_Delete.png) no-repeat; }
+
+.amp_p_giveonline_acct_delete:hover {
+  background-position: 0px -20px; }
+
+.amp_p_giveonline_banknote {
+  text-align: center;
+  margin: 10px 40px 10px 0px;
+  border: 1px Dashed #e8b51a;
+  padding: 5px;
+  color: #4269a2;
+  white-space: normal;
+  text-align: left; }
+
+.amp_p_giveonline_banknote a {
+  text-decoration: underline;
+  cursor: pointer; }
+
+.amp_p_giveonline_amounts {
+  margin: 10px 0px 15px 0px; }
+
+.amp_p_giveonline_amount {
+  clear: both;
+  margin: 0px 0px 10px 0px; }
+
+.amp_p_giveonline_amount input[type='text'] {
+  margin: 0px 15px 0px 0px;
+  width: 100px; }
+
+.amp_p_giveonline_amount_add {
+  background: url(img/elexio/images/Icon_Plus.gif) no-repeat left center;
+  padding-left: 20px; }
+
+.amp_p_giveonline_removeamount {
+  width: 20px;
+  height: 20px;
+  background: url(img/elexio/images/Icon_X.gif) no-repeat 0px 0px;
+  margin-left: 8px;
+  cursor: pointer;
+  vertical-align: top;
+  display: none; }
+
+.amp_p_giveonline_dateinfo {
+  padding: 0;
+  white-space: nowrap;
+  width: 550px; }
+
+#amp_p_giveonline_recurrence {
+  float: left;
+  display: block;
+  padding: 5px 3px 0 0; }
+
+#amp_p_giveonline_chargeaccount {
+  float: left;
+  display: block;
+  padding: 5px 3px 0 15px; }
+
+#amp_p_giveonline_frequency {
+  float: left; }
+
+.amp_p_giveonline_dateinfo img {
+  margin: 0px 5px 0px 3px;
+  vertical-align: top; }
+
+#amp_p_giveonline_dateinput span {
+  font-size: 0.8em;
+  display: block;
+  float: right;
+  margin-right: 83px; }
+
+.amp_p_giveonline_comments {
+  margin: 10px 0px 10px 0px; }
+
+.amp_p_giveonline_comments textarea {
+  width: 500px;
+  height: 50px; }
+
+.amp_p_giveonline_eftmessage_box {
+  width: 475px;
+  height: 340px;
+  position: relative;
+  display: none; }
+
+.amp_p_messagebox_border,
+.amp_p_giveonline_eftmessage_border {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  filter: alpha(opacity=50);
+  -moz-opacity: .5;
+  opacity: .5;
+  border-radius: 20px;
+  -moz-border-radius: 20px; }
+
+.amp_p_giveonline_eftmessage {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 415px;
+  height: 280px;
+  padding: 20px;
+  margin: 10px;
+  background: #f7f7f7;
+  background: -webkit-gradient(linear, 0% 10%, 0% 100%, from(white), to(#ededed));
+  background: -moz-linear-gradient(0% 10% 270deg, white, #ededed);
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  overflow: hidden; }
+
+.amp_p_giveonline_reminder_once {
+  margin: 0 0 20px 0; }
+
+.amp_p_giveonline_reminder_once,
+.amp_p_giveonline_reminder_recur {
+  display: none; }
+
+.amp_p_giveonline_reminder_once_details {
+  display: none;
+  border-left: 1px solid #bbbbbb;
+  margin: 5px 0px 5px 20px;
+  padding: 3px 0px 3px 10px; }
+
+.amp_p_giveonline_reminder_once_details img {
+  margin: 0px 5px 0px 3px;
+  vertical-align: top; }
+
+.amp_p_giveonline_reminder_recur select {
+  margin: 0px 5px 0px 5px; }
+
+.amp_p_giveonline_actions {
+  margin: 10px auto 0px;
+  text-align: center;
+  width: 152px; }
+
+.amp_p_giveonline_donate {
+  background: url(img/elexio/images/Button_Submit.png) no-repeat 0px 0px;
+  float: left;
+  width: 71px;
+  height: 21px;
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer; }
+
+.amp_p_giveonline_donate:hover {
+  background-position: 0px -21px; }
+
+.amp_p_giveonline_cancel {
+  background: url(img/elexio/images/Button_Cancel.png) no-repeat 0px 0px;
+  float: left;
+  width: 71px;
+  height: 21px;
+  display: inline-block;
+  cursor: pointer; }
+
+.amp_p_giveonline_cancel:hover {
+  background-position: 0px -21px; }
+
+/**********************/
+/* Add Payment Method */
+/**********************/
+.amp_p_financialaccount {
+  width: 475px;
+  height: 340px;
+  position: relative; }
+
+.amp_p_financialaccount_content {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 415px;
+  height: 280px;
+  padding: 20px;
+  margin: 10px;
+  background: #f7f7f7;
+  background: -webkit-gradient(linear, 0% 10%, 0% 100%, from(white), to(#ededed));
+  background: -moz-linear-gradient(0% 10% 270deg, white, #ededed);
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  overflow: hidden; }
+
+#amp_p_financialaccount_bankdetails {
+  display: none;
+  float: left;
+  border-top: 1px solid #dee7f2;
+  margin: 10px 0 10px;
+  padding-top: 10px; }
+
+#amp_p_financialaccount_type_cc {
+  margin-left: 10px; }
+
+#amp_p_financialaccount_type_bank {
+  margin-left: 20px; }
+
+#amp_p_financialaccount_sample_check {
+  background: url(img/elexio/images/check_sample.png) top left no-repeat;
+  display: block;
+  width: 400px;
+  height: 91px;
+  margin-top: 10px; }
+
+.amp_p_financialaccount_routing_box {
+  float: left;
+  padding: 5px;
+  border: 1px #999999 solid;
+  width: 190px;
+  font-size: 9px;
+  margin: 3px 0px 10px 0; }
+
+.amp_p_financialaccount_account_box {
+  float: right;
+  padding: 5px;
+  border: 1px #999999 solid;
+  width: 190px;
+  font-size: 9px;
+  margin: 3px 0px 10px 2px; }
+
+.amp_p_financialaccount_row {
+  clear: both;
+  margin: 0px auto 10px;
+  line-height: 1em;
+  height: 26px; }
+
+.amp_p_financialaccount_row_cardnumber {
+  float: left;
+  margin: 0;
+  line-height: 26px; }
+
+#amp_p_financialaccount_ccno {
+  width: 170px; }
+
+#amp_p_financialaccount_routing {
+  width: 180px; }
+
+#amp_p_financialaccount_account {
+  width: 180px; }
+
+#amp_p_financialaccount_checking {
+  margin: 0; }
+
+#amp_p_financialaccount_savings {
+  margin: 0 0 0 20px; }
+
+#amp_p_financialaccount_radio_buttons {
+  margin: 0px 0 5px 0; }
+
+.amp_p_financialaccount_cc_visa,
+.amp_p_financialaccount_cc_mastercard,
+.amp_p_financialaccount_cc_amex,
+.amp_p_financialaccount_cc_discover {
+  display: block;
+  float: left;
+  vertical-align: top;
+  width: 30px;
+  height: 20px;
+  background: no-repeat 0px -20px;
+  margin-left: 5px;
+  margin-top: 3px; }
+
+.amp_p_financialaccount_cc_visa {
+  background-image: url(img/elexio/images/Icon_CC_Visa.png);
+  margin-left: 10px; }
+
+.amp_p_financialaccount_cc_mastercard {
+  background-image: url(img/elexio/images/Icon_CC_Mastercard.png); }
+
+.amp_p_financialaccount_cc_amex {
+  background-image: url(img/elexio/images/Icon_CC_Amex.png); }
+
+.amp_p_financialaccount_cc_discover {
+  background-image: url(img/elexio/images/Icon_CC_Discover.png); }
+
+.amp_p_financialaccount_cc_selected {
+  background-position: 0px 0px; }
+
+#amp_p_financialaccount_cvv {
+  width: 32px; }
+
+.amp_p_financialaccount_cvv_sample {
+  display: inline-block;
+  float: left;
+  vertical-align: top;
+  width: 47px;
+  height: 21px;
+  background: url(img/elexio/images/Icon_cvv2.gif) no-repeat 0px 0px;
+  margin: 3px 15px 0 5px; }
+
+.amp_p_financialaccount select {
+  margin-right: 5px; }
+
+#amp_p_financialaccount_firstname,
+#amp_p_financialaccount_lastname {
+  width: 302px; }
+
+#amp_p_financialaccount_address {
+  width: 273px; }
+
+#amp_p_financialaccount_city {
+  width: 135px;
+  margin-right: 10px; }
+
+#amp_p_financialaccount_state {
+  width: 25px;
+  margin-right: 10px; }
+
+#amp_p_financialaccount_zip {
+  width: 58px; }
+
+#amp_p_financialaccount_country {
+  width: 75px; }
+
+.amp_p_financialaccount_actions {
+  clear: both;
+  text-align: center;
+  display: block;
+  margin: 0px auto 0px;
+  width: 152px;
+  height: 23px; }
+
+.amp_p_financialaccount_save {
+  display: inline-block;
+  float: left;
+  width: 71px;
+  height: 21px;
+  background: url(img/elexio/images/Button_Submit.png) no-repeat 0px 0px;
+  cursor: pointer; }
+
+.amp_p_financialaccount_save:hover {
+  background-position: 0px -21px; }
+
+.amp_p_financialaccount_cancel {
+  display: inline-block;
+  float: left;
+  width: 71px;
+  height: 21px;
+  background: url(img/elexio/images/Button_Cancel.png) no-repeat 0px 0px;
+  cursor: pointer;
+  margin-left: 10px; }
+
+.amp_p_financialaccount_cancel:hover {
+  background-position: 0px -21px; }
+
+/**************/
+/* Find Group */
+/**************/
+.amp_p_findgroup {
+  background: transparent url(img/elexio/images/litebox_back.png) top left no-repeat;
+  font-family: Arial,Helvetica,Sans-Serif;
+  height: 550px;
+  overflow: hidden;
+  padding: 10px;
+  width: 670px; }
+
+.amp_p_findgroup_content {
+  width: 640px;
+  height: 490px;
+  padding: 10px 0 0 10px;
+  overflow: hidden; }
+
+.amp_p_findgroup_iframe {
+  width: 640px;
+  height: 490px; }
+
+.amp_p_findgroup_locationinfo {
+  margin-bottom: 15px;
+  overflow: hidden;
+  width: 630px; }
+
+.amp_p_findgroup_locationinfo span {
+  float: left;
+  color: #777777;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  margin-right: 5px; }
+
+.amp_p_findgroup_address {
+  float: left;
+  width: 325px; }
+
+.amp_p_findgroup_search {
+  float: left;
+  vertical-align: -5px;
+  display: inline-block;
+  width: 72px;
+  height: 21px;
+  background: url(img/elexio/images/Button_Search.png) no-repeat 0px 0px;
+  margin-left: 5px;
+  cursor: pointer; }
+
+.amp_p_findgroup_search:hover {
+  background: url(img/elexio/images/Button_Search.png) no-repeat 0px -21px; }
+
+.amp_p_findgroup_filtersview {
+  background: #e7e7e7;
+  border: 1px solid #cccccc;
+  display: none;
+  font-family: Arial,Helvetica,Sans-Serif;
+  height: 378px;
+  width: 628px;
+  overflow: auto;
+  position: relative;
+  padding-top: 10px; }
+
+.amp_p_findgroup_filters {
+  float: left;
+  margin-left: 8px; }
+
+.amp_p_findgroup_filters_header {
+  color: #4269A2;
+  font-weight: bold;
+  font-size: 13px; }
+
+.amp_p_findgroup_filters_item {
+  color: #777777;
+  margin: 5px 0px 0px 5px;
+  font-size: 11px; }
+
+.amp_p_findgroup_filter_applyfilters {
+  background: url(img/elexio/images/Button_ApplyFilter.png) no-repeat 0px 0px;
+  display: block;
+  height: 21px;
+  width: 97px;
+  bottom: 15px;
+  right: 15px;
+  position: absolute;
+  text-indent: -99999px;
+  cursor: pointer; }
+
+.amp_p_findgroup_filter_applyfilters:hover {
+  background: url(img/elexio/images/Button_ApplyFilter.png) no-repeat 0px -21px; }
+
+.amp_p_findgroup_filter_search_txt {
+  color: #777777;
+  font-size: 11px; }
+
+.amp_p_findgroup_filters_topic_search {
+  color: #4269A2;
+  font-weight: bold;
+  font-size: 13px;
+  display: block;
+  height: 21px;
+  width: 200px;
+  bottom: 35px;
+  left: 15px;
+  position: absolute;
+  cursor: pointer; }
+
+.amp_p_findgroup_filters_topic_search_help {
+  font-size: 10px;
+  color: #777777;
+  font-family: Arial,Helvetica,Sans-Serif;
+  font-weight: lighter;
+  font-style: italic; }
+
+.amp_p_findgroup_listview {
+  display: none;
+  height: 380px;
+  margin-right: 10px;
+  padding-top: 10px;
+  width: 630px;
+  overflow: auto; }
+
+.amp_p_findgroup_listview_main {
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid #e9e9e9;
+  margin-bottom: 10px; }
+
+.amp_p_findgroup_mapview {
+  width: 630px;
+  height: 390px; }
+
+.amp_p_findgroup_viewtoggle {
+  background: url(img/elexio/images/viewbar.jpg) no-repeat;
+  display: block;
+  height: 28px;
+  width: 630px;
+  margin: 0;
+  padding: 0; }
+
+.amp_p_findgroup_mapview_button {
+  background: url(img/elexio/images/map_view_button.jpg) no-repeat 0px 0px;
+  cursor: pointer;
+  display: block;
+  float: left;
+  height: 28px;
+  margin-left: 58px;
+  text-indent: -99999px;
+  width: 45px; }
+
+.amp_p_findgroup_mapview_button:hover,
+.amp_p_findgroup_mapview_button.amp_p_findgroup_selected {
+  background-position: 0px -28px; }
+
+.amp_p_findgroup_list_button {
+  background: url(img/elexio/images/list_view_button.jpg) no-repeat 0px 0px;
+  cursor: pointer;
+  display: block;
+  float: left;
+  height: 28px;
+  text-indent: -99999px;
+  width: 43px; }
+
+.amp_p_findgroup_list_button:hover,
+.amp_p_findgroup_list_button.amp_p_findgroup_selected {
+  background-position: 0px -28px; }
+
+.amp_p_findgroup_filters_button {
+  background: url(img/elexio/images/filters_view_button.jpg) no-repeat 0px 0px;
+  cursor: pointer;
+  display: block;
+  float: left;
+  height: 28px;
+  text-indent: -99999px;
+  width: 57px; }
+
+.amp_p_findgroup_filters_button:hover,
+.amp_p_findgroup_filters_button.amp_p_findgroup_selected {
+  background-position: 0px -28px; }
+
+.amp_p_findgroup_map {
+  height: 390px;
+  width: 630px; }
+
+.amp_p_findgroup_name {
+  font-family: Arial,Helvetica,Sans-Serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #4269a2; }
+
+.amp_p_findgroup_time {
+  color: #3c3c3c;
+  font-size: 11px;
+  font-family: Arial,Helvetica,Sans-Serif;
+  font-weight: normal;
+  padding: 0px 15Px 7px 0px; }
+
+.amp_p_findgroup_childcare {
+  color: #3c3c3c;
+  font-style: normal;
+  font-family: Arial,Helvetica,Sans-Serif;
+  font-size: 11px;
+  padding: 0px 15px 7px 0px; }
+
+.amp_p_findgroup_street {
+  font-family: Arial,Helvetica,Sans-Serif;
+  color: #3C3C3C;
+  font-style: normal;
+  font-size: 11px;
+  padding: 0px 0px 7px 0px; }
+
+.amp_p_findgroup_description, .amp_p_findgroup_listview_topic {
+  font-family: Arial,Helvetica,Sans-Serif;
+  color: #777777;
+  font-size: 11px;
+  font-weight: normal;
+  padding-bottom: 7px; }
+
+.amp_p_findgroup_topic {
+  font-family: Arial,Helvetica,Sans-Serif;
+  color: #777777;
+  font-size: 11px;
+  font-weight: normal;
+  padding-bottom: 7px; }
+
+.amp_p_findgroup_leader_header {
+  color: #3c3c3c;
+  font-size: 11px;
+  font-family: Arial,Helvetica,Sans-Serif;
+  font-weight: normal;
+  padding-bottom: 3px; }
+
+.amp_p_findgroup_leader {
+  color: #3C3C3C;
+  font-family: Arial,Helvetica,Sans-Serif;
+  font-size: 11px;
+  padding-bottom: 5px; }
+
+.amp_p_findgroup_leader_name_communication {
+  padding-left: 5px; }
+
+.amp_p_findgroup_listview_name {
+  font-size: 13px;
+  font-family: Arial,Helvetica,Sans-Serif;
+  font-weight: bold;
+  color: #4269a2;
+  cursor: pointer;
+  display: inline; }
+
+.amp_p_findgroup_listview_time {
+  color: #3c3c3c;
+  font-family: Arial,Helvetica,Sans-Serif;
+  font-size: 11px;
+  font-weight: normal;
+  padding: 0 15px 7px 0; }
+
+.amp_p_findgroup_listview_childcare {
+  color: #3c3c3c;
+  font-style: normal;
+  font-family: Arial,Helvetica,Sans-Serif;
+  font-size: 11px;
+  padding: 0px 15px 7px 0px; }
+
+.amp_p_findgroup_listview_name:hover {
+  text-decoration: underline; }
+
+.amp_p_findgroup_listview_description {
+  padding: 0 0 5px 0px;
+  color: #777777;
+  font-family: Arial,Helvetica,Sans-Serif;
+  font-weight: normal;
+  font-size: 11px; }
+
+.amp_p_findgroup_listview_distance {
+  padding: 0 0 5px 5px;
+  color: #777777;
+  font-family: Arial,Helvetica,Sans-Serif;
+  font-weight: normal;
+  font-size: 11px;
+  display: inline; }
+
+.amp_p_findgroup_listview_leaders {
+  color: #3c3c3c;
+  font-family: Arial,Helvetica,Sans-Serif;
+  font-size: 11px;
+  padding: 0 0 5px 5px; }
+
+.amp_p_findgroup_listview_address {
+  color: #3c3c3c;
+  font-family: Arial,Helvetica,Sans-Serif;
+  font-size: 11px;
+  padding: 0 0 5px 5px; }
+
+.amp_p_findgroup_cancel {
+  display: inline-block;
+  width: 71px;
+  height: 21px;
+  background: url(img/elexio/images/Button_Cancel.png) no-repeat 0px 0px;
+  cursor: pointer; }
+
+.amp_p_findgroup_cancel:hover {
+  background-position: 0px -21px;
+  height: 271px; }
+
+.amp_p_findgroup_actions {
+  text-align: center;
+  margin-top: 10px; }
+
+.amp_p_findgroup_map img {
+  border: 3px solid black; }
+
+/***************************/
+/* Groups Enter Attendance */
+/***************************/
+.amp_p_container_groups_enteratten {
+  width: 670px; }
+
+.amp_p_groupsenteratten_selectdate {
+  margin-bottom: 15px; }
+
+.amp_p_groupsenteratten_selectdate img {
+  vertical-align: bottom;
+  margin: 0px 0px 2px 3px; }
+
+#amp_p_groupsenteratten_date {
+  margin-left: 6px; }
+
+.amp_p_groupsenteratten_left {
+  float: left; }
+
+.amp_p_groupsenteratten_right {
+  float: left;
+  margin-left: 15px; }
+
+.amp_p_groupsenteratten_members {
+  border: 1px solid #848484; }
+
+.amp_p_groupsenteratten_members thead td {
+  padding: 10px 8px 10px 8px;
+  color: #4269a2;
+  font-size: 10px;
+  font-weight: bold;
+  background: #d1dbe8;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#bbc9dd), to(#eff2f7));
+  background: -moz-linear-gradient(0% 0% 270deg, #bbc9dd, #eff2f7);
+  border-left: 1px solid #848484; }
+
+.amp_p_groupsenteratten_members thead td:first-child {
+  border-left: 0px; }
+
+.amp_p_groupsenteratten_members tbody tr td {
+  padding: 8px;
+  color: #000;
+  border-top: 1px solid #848484;
+  border-left: 1px solid #848484;
+  background: #fff; }
+
+.amp_p_groupsenteratten_members tbody tr td:first-child {
+  border-left: 0px;
+  text-align: center; }
+
+.amp_p_groupsenteratten_members tbody tr.amp_p_groupsenteratten_altrow td {
+  background: #f1f1f1; }
+
+.amp_p_groupsenteratten_savechanges {
+  display: inline-block;
+  vertical-align: -6px;
+  width: 131px;
+  height: 21px;
+  background: url(img/elexio/images/Button_SaveChanges.png) no-repeat 0px 0px;
+  cursor: pointer; }
+
+.amp_p_groupsenteratten_savechanges:hover {
+  background-position: 0px -21px; }
+
+/***************/
+/* Error       */
+/***************/
+.amp_p_error_box {
+  border: 1px Solid black;
+  background: White;
+  overflow: hidden; }
+
+.amp_p_error_button {
+  background: Gray;
+  border: 1px Solid darkgrey;
+  cursor: pointer;
+  height: 20px;
+  width: 40px;
+  float: right;
+  color: Black; }
+
+.amp_p_error_button:hover {
+  background: LightGray; }
+
+.amp_p {
+  /* This surrounds the entire portal */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  color: #777;
+  width: 670px;
+  margin: 0px auto 0px auto;
+  padding: 15px 0px 15px 0px; }
+
+.amp_p input[type='text'],
+.amp_p textarea,
+.amp_p_litebox input[type='text'],
+.amp_p_litebox textarea {
+  font-family: Tahoma;
+  font-size: 12px;
+  font-weight: normal;
+  color: #000;
+  padding: 5px 4px 4px 4px;
+  margin: 0px;
+  border: 1px solid #c1c1c1;
+  border-top: 1px solid #848484;
+  border-bottom: 1px solid #e1e1e1;
+  background: url(img/elexio/images/Input_Bg.png) no-repeat left top;
+  height: 15px;
+  width: 100%; }
+
+.amp_p select,
+.amp_p_litebox select {
+  font-family: Tahoma;
+  font-size: 12px;
+  font-weight: normal;
+  color: #000;
+  padding: 3px;
+  margin: 0px;
+  border: 1px solid #c1c1c1;
+  border-top: 1px solid #848484;
+  border-bottom: 1px solid #e1e1e1;
+  background: url(img/elexio/images/Input_Bg.png) no-repeat left top; }
+
+.amp_p_liteboxbg {
+  position: fixed;
+  display: none;
+  background: Black;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  filter: alpha(opacity=55);
+  -moz-opacity: .55;
+  opacity: .55;
+  z-index: 9998; }
+
+.amp_p_litebox {
+  background-color: transparent;
+  display: none;
+  position: fixed;
+  top: 200px;
+  left: 200px;
+  margin: auto;
+  z-index: 9999;
+  font-family: Tahoma, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  color: #777; }
+
+.amp_p_loadingbg {
+  color: #7b7b7b;
+  font-family: Arial;
+  font-size: 22px;
+  font-weight: normal;
+  width: 129px;
+  height: 54px;
+  background: url(img/elexio/images/Ajax_Indicator_Bg.png) no-repeat left top;
+  padding: 30px 0px 0px 80px; }
+
+.amp_p_loading {
+  position: absolute;
+  top: 25px;
+  left: 30px;
+  width: 32px;
+  height: 32px;
+  background: url(img/elexio/images/ajax-loader.gif) no-repeat left top; }
+
+.amp_p_invaliddata {
+  border: 1px Solid red; }
+
+INPUT[type='text'].amp_p_invaliddata {
+  border: 1px Solid red; }
+
+/**********/
+/* TopBar */
+/**********/
+.amp_p_topbar {
+  /* This surrounds the menu at the top */ }
+
+.amp_p_topbar_info {
+  text-align: right;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #767676;
+  padding-bottom: 10px; }
+
+.amp_p_topbar_info span {
+  color: #2e72a8;
+  margin-left: 5px;
+  border-left: 1px solid #767676;
+  padding-left: 5px; }
+
+.amp_p_topbar_info span:hover {
+  cursor: pointer;
+  text-decoration: underline; }
+
+/********/
+/* Menu */
+/********/
+.amp_p_menucontainer {
+  /* This surrounds the menu at the top */
+  overflow: hidden;
+  height: 42px;
+  margin: 0px 0px 5px 0px;
+  padding: 0px 0px 0px 58px;
+  background: url(img/elexio/images/Menu_Bg.png) no-repeat center bottom; }
+
+.amp_p_menuitem {
+  display: block;
+  float: left;
+  padding: 0px;
+  margin: 0px 0px 0px 5px;
+  font-size: 1px;
+  text-indent: -10000px;
+  height: 32px; }
+
+.amp_p_menu_myinfo {
+  width: 72px;
+  background: url(img/elexio/images/Menu_MyInfo.png) no-repeat 0px 0px; }
+
+.amp_p_menu_churchdir {
+  width: 119px;
+  background: url(img/elexio/images/Menu_ChurchDir.png) no-repeat 0px 0px; }
+
+.amp_p_menu_groups {
+  width: 94px;
+  background: url(img/elexio/images/Menu_Groups.png) no-repeat 0px 0px; }
+
+.amp_p_menu_ministries {
+  width: 89px;
+  background: url(img/elexio/images/Menu_Ministries.png) no-repeat 0px 0px; }
+
+.amp_p_menu_events {
+  width: 65px;
+  background: url(img/elexio/images/Menu_Events.png) no-repeat 0px 0px; }
+
+.amp_p_menu_giving {
+  width: 70px;
+  background: url(img/elexio/images/Menu_Giving.png) no-repeat 0px 0px; }
+
+.amp_p_menuitem:hover {
+  background-position: 0px -32px; }
+
+.amp_p_menuitem.amp_p_selected {
+  background-position: 0px -64px; }
+
+.amp_p_menuitem.amp_p_selected:hover {
+  background-position: 0px -64px; }
+
+/***********/
+/* Content */
+/***********/
+.amp_p_container {
+  /* This SHOULD surround each of the controls under the menu (but not the menu) */
+  overflow: hidden; }
+
+.amp_p_section {
+  padding: 10px;
+  overflow: hidden;
+  border: 1px solid #bcbcbc;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background: #f7f7f7;
+  background: -webkit-gradient(linear, 0% 10%, 0% 100%, from(white), to(#ededed));
+  background: -moz-linear-gradient(0% 10% 270deg, white, #ededed); }
+
+.amp_p_section_title {
+  font-family: Tahoma;
+  font-weight: bold;
+  font-size: 14px;
+  color: #4269a2;
+  padding-bottom: 10px; }
+
+.amp_p_centertext {
+  text-align: center; }
+
+/**********/
+/* Login */
+/**********/
+.amp_p_container_login {
+  margin: 20px 0 20px; }
+
+.amp_p_login_box {
+  background: url(img/elexio/images/logback.png) no-repeat center top;
+  margin: auto;
+  width: 399px;
+  height: 305px;
+  overflow: hidden;
+  position: relative; }
+
+.amp_p_login_smallbox {
+  margin: auto;
+  width: 300px; }
+
+#amp_p_forgot {
+  background: none; }
+
+#amp_p_login_username {
+  background: transparent;
+  border: 0px;
+  position: absolute;
+  top: 58px;
+  left: 35px;
+  display: block;
+  font-size: 20px;
+  color: #777777;
+  width: 327px;
+  height: 28px;
+  padding: 7px 0px 5px 0px;
+  outline: none; }
+
+#amp_p_login_password {
+  background: transparent;
+  border: 0px;
+  position: absolute;
+  top: 135px;
+  left: 35px;
+  display: block;
+  font-size: 20px;
+  color: #777777;
+  width: 327px;
+  height: 28px;
+  padding: 7px 0px 5px 0px;
+  outline: none; }
+
+#amp_p_login_remember {
+  position: absolute;
+  top: 200px;
+  left: 25px;
+  color: #7e7e7e;
+  font-size: 12px; }
+
+#amp_p_login_remember input {
+  vertical-align: -2px; }
+
+#amp_p_login_button {
+  position: absolute;
+  top: 195px;
+  left: 285px;
+  height: 35px;
+  width: 87px;
+  background: url(img/elexio/images/Button_Login.png) no-repeat 0px 0px;
+  border: 0px;
+  cursor: pointer; }
+
+#amp_p_login_button:hover {
+  background-position: 0px -35px; }
+
+.amp_p_login_fail {
+  position: absolute;
+  top: 16px;
+  left: 0px;
+  width: 399px;
+  font-size: 14px;
+  color: #f00;
+  text-align: center; }
+
+#amp_p_login_footer {
+  position: absolute;
+  top: 247px;
+  left: 0px;
+  width: 399px;
+  font-size: 11px;
+  color: #7e7e7e;
+  text-align: center; }
+
+#amp_p_login_footer a {
+  padding: 0px 5px 0px 5px;
+  border-left: 1px solid #7e7e7e;
+  color: #7e7e7e;
+  text-decoration: none; }
+
+#amp_p_login_footer a:first-child {
+  border: 0px; }
+
+#amp_p_login_footer a:hover {
+  color: #4883b2;
+  text-decoration: none; }
+
+#amp_p_login_privtos {
+  position: absolute;
+  top: 290px;
+  left: 0px;
+  width: 399px;
+  font-size: 8px;
+  text-transform: uppercase;
+  color: #7e7e7e;
+  text-align: center; }
+
+#amp_p_login_privtos a {
+  color: #7e7e7e;
+  text-decoration: none; }
+
+#amp_p_login_privtos a:hover {
+  text-decoration: underline;
+  cursor: pointer; }
+
+#amp_p_login_privacypolicy {
+  width: 280px; }
+
+#amp_p_login_privacypolicy a {
+  text-decoration: underline;
+  cursor: pointer; }
+
+#amp_p_login_privacypolicy .amp_p_litebox_button_zone {
+  width: 270px; }
+
+/**************/
+/* CreateUser */
+/**************/
+.amp_p_container_createuser {
+  margin: 20px 0 20px; }
+
+.amp_p_createuser_box {
+  margin: auto;
+  width: 400px;
+  height: auto;
+  overflow: hidden;
+  position: relative; }
+
+.amp_p_createuser_title {
+  color: #555;
+  font-size: x-large;
+  margin-bottom: 15px;
+  line-height: 20px; }
+
+.amp_p_createuser_stepmarker {
+  float: left;
+  width: 133px;
+  height: 30px; }
+
+.amp_p_createuser_stepmarker.amp_p_selected {
+  color: #6486a9; }
+
+.amp_p_createuser_stepmarker1,
+.amp_p_createuser_stepmarker2,
+.amp_p_createuser_stepmarker3 {
+  width: 133px;
+  height: 24px;
+  background: url(img/elexio/images/progress.png) no-repeat; }
+
+.amp_p_createuser_stepmarker1 {
+  background-position: 0 -24px; }
+
+.amp_p_createuser_stepmarker2 {
+  background-position: -133px -24px; }
+
+.amp_p_createuser_stepmarker3 {
+  background-position: -266px -24px;
+  width: 134px; }
+
+.amp_p_selected .amp_p_createuser_stepmarker1,
+.amp_p_selected .amp_p_createuser_stepmarker2,
+.amp_p_selected .amp_p_createuser_stepmarker3 {
+  background: url(img/elexio/images/progress.png) no-repeat; }
+
+.amp_p_selected .amp_p_createuser_stepmarker1 {
+  background-position: 0 0; }
+
+.amp_p_selected .amp_p_createuser_stepmarker2 {
+  background-position: -133px 0; }
+
+.amp_p_selected .amp_p_createuser_stepmarker3 {
+  background-position: -266px 0; }
+
+.amp_p_createuser_content,
+.amp_p_createuser_content_step3 {
+  color: #555;
+  clear: both;
+  font-size: large;
+  margin: 70px 30px 40px 30px; }
+
+.amp_p_createuser_content_step3 {
+  color: #555;
+  clear: both;
+  font-size: large;
+  margin: 70px 0 40px 0; }
+
+.amp_p_createuser_content_step1b {
+  clear: both;
+  font-size: medium; }
+
+.amp_p_createuser_box input[type='radio'] {
+  display: block;
+  float: left;
+  margin: 17px 0 0 0; }
+
+#amp_p_createuser_male_label, #amp_p_createuser_female_label {
+  clear: none;
+  display: block;
+  float: left;
+  padding: 17px 0 0 5px;
+  width: auto; }
+
+.amp_p_createuser_content_step3 input[type='text'], .amp_p_createuser_content_step3 input[type='password'] {
+  float: left;
+  background: #fff;
+  border: #c8c8c8 1px solid;
+  color: #555;
+  font-size: large;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-family: Arial,sans-serif;
+  height: 25px;
+  margin: 5px 0;
+  padding: 8px;
+  width: 240px; }
+
+.amp_p_createuser_content_step3 label {
+  clear: both;
+  color: #555555;
+  float: left;
+  font-size: small;
+  margin: 0 20px 0 0;
+  padding: 15px 0 0 0;
+  text-align: right;
+  width: 120px; }
+
+.amp_p_createuser_buttons {
+  float: right; }
+
+.amp_p_createuser_fail {
+  width: 399px;
+  font-size: 14px;
+  color: #f00;
+  text-align: center;
+  clear: both;
+  display: block; }
+
+.amp_p #amp_p_createuser_email, .amp_p #amp_p_createuser_code {
+  background: #fff;
+  border: #c8c8c8 1px solid;
+  color: #555;
+  font-size: large;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-family: Arial,sans-serif;
+  height: 25px;
+  margin: 5px 0 0 0;
+  padding: 8px; }
+
+.amp_p_createuser_nextbutton {
+  background: url(img/elexio/images/next.png) no-repeat top left;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  height: 35px;
+  margin: 0 5px 0 0;
+  text-indent: -9999px;
+  width: 125px;
+  zoom: 1;
+  display: inline; }
+
+.amp_p_createuser_nextbutton:hover, .amp_p_createuser_nextbutton:active {
+  background: url(img/elexio/images/next.png) no-repeat bottom left; }
+
+.amp_p_createuser_setupbutton {
+  background: url(img/elexio/images/setup.png) no-repeat top left;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  height: 35px;
+  margin: 0 5px 0 0;
+  text-indent: -9999px;
+  width: 167px;
+  zoom: 1;
+  display: inline; }
+
+.amp_p_createuser_setupbutton:hover, .amp_p_createuser_setupbutton:active {
+  background: url(img/elexio/images/setup.png) no-repeat bottom left; }
+
+.amp_p_createuser_buttons a {
+  color: #555;
+  display: inline-block;
+  zoom: 1;
+  display: inline; }
+
+.amp_p_createuser_box select {
+  border: #c8c8c8 1px solid;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin: 10px 10px 0 0; }
+
+/**********/
+/* MyInfo */
+/**********/
+.amp_p_myinfo_fmember {
+  float: left;
+  padding: 0px 0px 10px 0px;
+  width: 670px; }
+
+.amp_p_myinfo_fmember span {
+  font-family: Tahoma;
+  font-weight: bold;
+  font-size: 11px;
+  color: #4269a2; }
+
+.amp_p_myinfo_fmember select {
+  font-size: 11px;
+  outline: none;
+  margin-left: 5px; }
+
+.amp_p_events_memberselect {
+  float: right; }
+
+.amp_p_myinfo_changed {
+  float: left;
+  display: inline-block;
+  margin: auto 15px auto 10px;
+  padding: 5px;
+  border: 1px dashed #e8b51a;
+  color: #4269a2;
+  visibility: hidden; }
+
+#amp_p_myinfo_savechanges_top {
+  float: left; }
+
+#amp_p_events_memberselect {
+  float: right;
+  width: 250px; }
+
+.amp_p_myinfo_personalinfo {
+  margin: 5px 0px 5px 0px;
+  width: 648px; }
+
+.amp_p_myinfo_household {
+  margin: 0px 0px 5px 0px; }
+
+.amp_p_myinfo_personalinfo .amp_p_myinfo_pic {
+  float: left;
+  margin: 0px 20px 10px 30px;
+  display: block; }
+
+.amp_p_myinfo_household .amp_p_myinfo_pic {
+  float: left;
+  margin: 0px 25px 0px 25px; }
+
+.amp_p_myinfo_personalinfo .amp_p_myinfo_picbox,
+.amp_p_myinfo_household .amp_p_myinfo_picbox {
+  margin: 5px 0px 8px 0px;
+  padding: 4px;
+  border: 1px solid #c3c3c3;
+  background: #fff;
+  -webkit-border-radius: 4px;
+  -webkit-box-shadow: 1px 1px 4px #cccccc;
+  -moz-border-radius: 4px;
+  -moz-box-shadow: 1px 1px 4px #cccccc; }
+
+.amp_p_myinfo_personalinfo .amp_p_myinfo_picbox img {
+  max-height: 150px;
+  max-width: 150px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px; }
+
+.amp_p_myinfo_household .amp_p_myinfo_picbox img {
+  max-height: 250px;
+  max-width: 275px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px; }
+
+.amp_p_myinfo_personalinfo .amp_p_myinfo_picbuttons_edit,
+.amp_p_myinfo_household .amp_p_myinfo_picbuttons_edit {
+  position: relative;
+  float: left;
+  display: inline-block;
+  height: 20px;
+  width: 49px;
+  background: url(img/elexio/images/Button_Edit.png) no-repeat;
+  padding: 0px;
+  overflow: hidden; }
+
+#amp_p_myinfo_household {
+  padding-top: 5px;
+  /*font-weight: bold;*/
+  color: Black; }
+
+#amp_p_myinfo_upload,
+#amp_p_myinfo_household_upload {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin: 0px;
+  height: 20px;
+  width: 49px;
+  filter: alpha(opacity=1);
+  -moz-opacity: .01;
+  opacity: .01; }
+
+.amp_p_myinfo_personalinfo .amp_p_myinfo_picbuttons_delete,
+.amp_p_myinfo_household .amp_p_myinfo_picbuttons_delete {
+  display: inline-block;
+  float: left;
+  margin-left: 5px;
+  height: 20px;
+  width: 49px;
+  background: url(img/elexio/images/Button_Delete.png) no-repeat; }
+
+.amp_p_myinfo_personalinfo .amp_p_myinfo_picbuttons_delete:hover,
+.amp_p_myinfo_household .amp_p_myinfo_picbuttons_delete:hover {
+  background-position: 0px -20px; }
+
+.amp_p_myinfo_namecontainer {
+  float: right;
+  position: relative;
+  width: 425px;
+  height: 107px;
+  overflow: hidden; }
+
+.amp_p_myinfo_namepart {
+  float: left;
+  margin: 0px 8px 10px 0px; }
+
+.amp_p_myinfo_namepart div {
+  white-space: nowrap;
+  margin-bottom: 3px; }
+
+.amp_p_myinfo_namepart span {
+  white-space: nowrap;
+  font-size: 9px;
+  margin-left: 8px; }
+
+.amp_p_myinfo_pinfo {
+  float: right;
+  margin-top: 5px;
+  position: relative;
+  width: 425px;
+  height: 70px; }
+
+.amp_p_myinfo_pinfo_bdate {
+  position: absolute;
+  white-space: nowrap; }
+
+.amp_p_myinfo_pinfo_mstatus {
+  position: absolute;
+  left: 200px;
+  white-space: nowrap; }
+
+.amp_p_myinfo_pinfo_gender {
+  position: absolute;
+  top: 40px;
+  white-space: nowrap; }
+
+.amp_p_myinfo_pinfo_incindir {
+  position: absolute;
+  top: 40px;
+  left: 190px;
+  white-space: nowrap; }
+
+.amp_p_myinfo_pinfo_bdate span,
+.amp_p_myinfo_pinfo_mstatus span,
+.amp_p_myinfo_pinfo_gender span,
+.amp_p_myinfo_pinfo_incindir span,
+.amp_p_myinfo_pinfo_campus span {
+  white-space: nowrap;
+  margin-right: 5px; }
+
+.amp_p_myinfo_pinfo_campus {
+  float: right;
+  width: 425px;
+  margin: 5px 0px 10px 0px;
+  white-space: nowrap; }
+
+.amp_p_myinfo_personalinfo img {
+  vertical-align: bottom;
+  margin: 0px 0px 2px 3px; }
+
+.amp_p_myinfo_personalinfo label {
+  color: #000; }
+
+.amp_p_myinfo_household table {
+  float: left; }
+
+.amp_p_myinfo_household td {
+  vertical-align: top;
+  padding: 0px 0px 7px 0px; }
+
+.amp_p_myinfo_household td span {
+  display: block;
+  padding-bottom: 5px;
+  font-size: 9px; }
+
+.amp_p_myinfo_household .amp_p_myinfo_label {
+  white-space: nowrap;
+  text-align: right;
+  padding: 5px 5px 0px 0px;
+  display: block;
+  min-height: 27px; }
+
+.amp_p_myinfo_comms {
+  margin: 0px 0px 5px 0px; }
+
+.amp_p_myinfo_lists {
+  margin: 0px 0px 5px 0px; }
+
+.amp_p_myinfo_comms table,
+.amp_p_myinfo_lists table {
+  width: 100%;
+  border: 1px solid #848484; }
+
+.amp_p_myinfo_comms table thead td,
+.amp_p_myinfo_lists table thead td {
+  padding: 10px 8px 10px 8px;
+  color: #4269a2;
+  font-size: 10px;
+  font-weight: bold;
+  background: #d1dbe8;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#bbc9dd), to(#eff2f7));
+  background: -moz-linear-gradient(0% 0% 270deg, #bbc9dd, #eff2f7);
+  border-left: 1px solid #848484; }
+
+.amp_p_myinfo_comms table thead td:first-child,
+.amp_p_myinfo_lists table thead td:first-child {
+  border-left: 0px; }
+
+.amp_p_myinfo_comms table tbody tr td,
+.amp_p_myinfo_lists table tbody tr td {
+  padding: 4px;
+  text-align: center;
+  border-top: 1px solid #848484;
+  border-left: 1px solid #848484;
+  background: #fff; }
+
+.amp_p_myinfo_comms table tbody tr.amp_p_myinfo_altrow td,
+.amp_p_myinfo_lists table tbody tr.amp_p_myinfo_altrow td {
+  background: #f1f1f1; }
+
+.amp_p_myinfo_comms table tbody td div,
+.amp_p_myinfo_lists table tbody td div {
+  color: #000;
+  text-align: left; }
+
+.amp_p_myinfo_comms table tbody td:first-child,
+.amp_p_myinfo_lists table tbody td:first-child {
+  border-left: 0px; }
+
+.amp_p_myinfo_comms table tbody td select {
+  width: 108px; }
+
+.amp_p_myinfo_comms table tbody td input[type='text'] {
+  width: 368px; }
+
+.amp_p_myinfo_comms_delete {
+  width: 49px;
+  height: 20px;
+  background: url(img/elexio/images/Button_Delete.png) no-repeat; }
+
+.amp_p_myinfo_comms_delete:hover {
+  background-position: 0px -20px; }
+
+.amp_p_myinfo_comms_add_container {
+  position: relative;
+  height: 28px; }
+
+.amp_p_myinfo_comms_add {
+  position: absolute;
+  top: 6px;
+  right: 4px;
+  width: 49px;
+  height: 20px;
+  background: url(img/elexio/images/Button_Add.png) no-repeat 0px 0px; }
+
+.amp_p_myinfo_comms_add:hover {
+  background-position: 0px -20px; }
+
+.amp_p_myinfo_commethods_priority {
+  height: 12px;
+  background: url(img/elexio/images/Icon_Defaults.png) no-repeat center -12px; }
+
+.amp_p_myinfo_default {
+  background-position: center 0px; }
+
+.amp_p_myinfo_commethods_private {
+  height: 12px;
+  background: url(img/elexio/images/Icon_Privacy.png) no-repeat center 0px; }
+
+.amp_p_myinfo_private {
+  background-position: center -12px; }
+
+.amp_p_myinfo_changepassword {
+  margin: 0 0 10px; }
+
+.amp_p_myinfo_changepassword {
+  margin: 0px 0px 10px 0px; }
+
+.amp_p_myinfo_savechanges {
+  display: inline-block;
+  vertical-align: -6px;
+  width: 131px;
+  height: 21px;
+  background: url(img/elexio/images/Button_SaveChanges.png) no-repeat 0px 0px;
+  cursor: pointer; }
+
+.amp_p_myinfo_savechanges:hover {
+  background-position: 0px -21px; }
+
+/**************/
+/* Church Dir */
+/**************/
+.amp_p_container_cdir {
+  position: relative; }
+
+.amp_p_cdir_search {
+  float: left;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  height: 26px;
+  width: 655px; }
+
+.amp_p_cdir_search_field {
+  float: left; }
+
+.amp_p_cdir_search_button {
+  display: inline-block;
+  float: left;
+  width: 72px;
+  height: 21px;
+  background: url(img/elexio/images/Button_Search.png) no-repeat 0px 0px;
+  margin: 3px 5px 0;
+  cursor: pointer; }
+
+.amp_p_cdir_search_button:hover {
+  background-position: 0px -21px; }
+
+#amp_p_cdir_search_field_text {
+  float: left;
+  padding: 6px 0 0 3px; }
+
+.amp_p_cdir_tabs {
+  height: 15px;
+  padding-left: 10px;
+  overflow: hidden;
+  position: absolute;
+  top: 41px;
+  left: 0px;
+  margin: 0;
+  width: 660px;
+  z-index: 100; }
+
+.amp_p_cdir_tableft {
+  float: left;
+  height: 14px;
+  background: url(img/elexio/images/Dir_Tab_Left.png) no-repeat 0px 0px;
+  padding: 1px 2px 0px 6px;
+  color: #585858;
+  font-size: 10px;
+  line-height: 13px;
+  text-transform: uppercase;
+  overflow: hidden;
+  cursor: pointer; }
+
+.amp_p_selected .amp_p_cdir_tableft {
+  background-position: 0px -15px; }
+
+.amp_p_cdir_tabright {
+  float: left;
+  height: 15px;
+  width: 4px;
+  background: url(img/elexio/images/Dir_Tab_Right.png) no-repeat 0px 0px;
+  margin-right: 2px;
+  cursor: pointer; }
+
+.amp_p_selected .amp_p_cdir_tabright {
+  background-position: 0px -15px; }
+
+.amp_p_cdir_entries {
+  border: 1px solid #bcbcbc;
+  clear: both;
+  float: left;
+  margin-top: 13px;
+  padding: 0;
+  width: 668px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px; }
+
+.amp_p_cdir_entry {
+  position: relative;
+  padding: 10px;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid white;
+  background: #fff;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(#ebebeb));
+  background: -moz-linear-gradient(0% 0% 270deg, white, #ebebeb);
+  overflow: hidden; }
+
+.amp_p_cdir_entry:first-child {
+  border-top: 0px;
+  -moz-border-radius-topright: 6px;
+  -moz-border-radius-topleft: 6px;
+  -webkit-border-top-right-radius: 6px;
+  -webkit-border-top-left-radius: 6px; }
+
+.amp_p_cdir_entry_left {
+  float: left; }
+
+.amp_p_cdir_entry_right {
+  float: right;
+  width: 375px;
+  margin-bottom: 25px; }
+
+.amp_p_cdir_entry_housename {
+  font-size: 14px;
+  font-weight: bold;
+  color: #4269a2;
+  cursor: pointer; }
+
+.amp_p_cdir_entry_houseaddr {
+  font-size: 12px;
+  color: #4269a2;
+  text-decoration: underline;
+  cursor: pointer; }
+
+.amp_p_cdir_entry_homephone {
+  padding: 0px 0px 0px 20px;
+  margin-top: 5px;
+  background: url(img/elexio/images/Icon_HomePhone.png) no-repeat left center; }
+
+.amp_p_cdir_entry_mobilephone {
+  padding: 0px 0px 0px 20px;
+  margin-top: 5px;
+  background: url(img/elexio/images/Icon_MobilePhone.png) no-repeat left center; }
+
+.amp_p_cdir_entry_familypic {
+  margin: 10px 0px 0px 0px;
+  padding: 4px;
+  border: 1px solid #c3c3c3;
+  background: #fff;
+  -webkit-border-radius: 4px;
+  -webkit-box-shadow: 1px 1px 4px #cccccc;
+  -moz-border-radius: 4px;
+  -moz-box-shadow: 1px 1px 4px #cccccc; }
+
+.amp_p_cdir_entry_familypic img {
+  max-width: 250px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px; }
+
+.amp_p_cdir_entry_person {
+  padding: 6px;
+  overflow: hidden;
+  border: 1px solid #bcbcbc;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  margin-bottom: 8px;
+  background: #f3f3f3;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(#ebebeb));
+  background: -moz-linear-gradient(0% 0% 270deg, white, #ebebeb); }
+
+.amp_p_cdir_entry_person_left {
+  float: left; }
+
+.amp_p_cdir_entry_person_right {
+  float: right; }
+
+.amp_p_cdir_entry_person_name {
+  font-size: 14px;
+  font-weight: bold;
+  color: #4269a2; }
+
+.amp_p_cdir_entry_person_email,
+.amp_p_cdir_entry_person_homephone,
+.amp_p_cdir_entry_person_mobilephone,
+.amp_p_cdir_entry_person_work {
+  margin-top: 3px;
+  padding-left: 5px; }
+
+.amp_p_cdir_entry_person_email span {
+  color: #4269a2;
+  text-decoration: underline;
+  cursor: pointer; }
+
+.amp_p_cdir_entry_person_social {
+  overflow: hidden;
+  padding-left: 5px;
+  margin-top: 5px; }
+
+.amp_p_cdir_entry_person_social div {
+  float: left;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  margin-right: 3px; }
+
+.amp_p_cdir_entry_person_social_facebook {
+  background: url(img/elexio/images/Dir_SocialIcons.png) no-repeat 0px -20px; }
+
+.amp_p_cdir_entry_person_social_myspace {
+  background: url(img/elexio/images/Dir_SocialIcons.png) no-repeat 0px -80px; }
+
+.amp_p_cdir_entry_person_social_twitter {
+  background: url(img/elexio/images/Dir_SocialIcons.png) no-repeat 0px -100px; }
+
+.amp_p_cdir_entry_person_social_blog {
+  background: url(img/elexio/images/Dir_SocialIcons.png) no-repeat 0px 0px; }
+
+.amp_p_cdir_entry_person_social_linkedin {
+  background: url(img/elexio/images/Dir_SocialIcons.png) no-repeat 0px -60px; }
+
+.amp_p_cdir_entry_person_social_flickr {
+  background: url(img/elexio/images/Dir_SocialIcons.png) no-repeat 0px -40px; }
+
+.amp_p_cdir_entry_person_social_youtube {
+  background: url(img/elexio/images/Dir_SocialIcons.png) no-repeat 0px -120px; }
+
+.amp_p_cdir_entry_person_pic {
+  margin: 0px 0px 0px 10px;
+  padding: 4px;
+  border: 1px solid #c3c3c3;
+  background: #fff;
+  -webkit-border-radius: 4px;
+  -webkit-box-shadow: 1px 1px 4px #cccccc;
+  -moz-border-radius: 4px;
+  -moz-box-shadow: 1px 1px 4px #cccccc; }
+
+.amp_p_cdir_entry_person_pic img {
+  max-width: 125px;
+  max-height: 125px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px; }
+
+.amp_p_cdir_entry_more {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  padding: 0px 0px 0px 16px;
+  background: url(img/elexio/images/Icon_Expand.png) no-repeat left center;
+  cursor: pointer; }
+
+.amp_p_cdir_entry_less {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  padding: 0px 0px 0px 16px;
+  background: url(img/elexio/images/Icon_Collapse.png) no-repeat left center;
+  cursor: pointer; }
+
+.amp_p_cdir_paging {
+  border-top: 1px solid #ebebeb;
+  padding: 10px;
+  text-align: left; }
+
+.amp_p_cdir_paging span {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-left: 8px;
+  cursor: pointer; }
+
+.amp_p_cdir_paging_cur {
+  color: #4269a2; }
+
+.amp_p_cdir_paging_l,
+.amp_p_cdir_paging_r {
+  width: 16px;
+  height: 15px;
+  background: url(img/elexio/images/Dir_Pager.png) 0px 0px; }
+
+.amp_p_cdir_paging_r {
+  background-position: 0px -15px; }
+
+/**********/
+/* Groups */
+/**********/
+#amp_p_group_info_zone {
+  display: block;
+  font-family: Arial, Helvetica, Sans-Serif;
+  width: 500px;
+  margin-bottom: 20px; }
+
+#amp_p_group_info_zone p {
+  margin: 0 0 12px;
+  line-height: 1.5;
+  font-size: 11px; }
+
+#amp_p_group_name {
+  font-size: 16px;
+  width: 205px; }
+
+.amp_p_groups_left {
+  float: left;
+  width: 150px; }
+
+.amp_p_groups_right {
+  float: right;
+  margin-left: 10px;
+  width: 500px; }
+
+.amp_p_groups_menu {
+  padding: 15px 9px 10px 0px;
+  background: url(img/elexio/images/Groups_MenuBg_Top.png) repeat-y right top; }
+
+.amp_p_groups_menubottom {
+  height: 20px;
+  background: url(img/elexio/images/Groups_MenuBg_Bottom.png) no-repeat right top; }
+
+.amp_p_groups_menuitems {
+  padding-left: 3px;
+  overflow: hidden; }
+
+.amp_p_groups_menuitem {
+  padding: 4px 15px 4px 6px;
+  text-align: right;
+  margin-top: 5px;
+  font-size: 11px;
+  cursor: pointer; }
+
+.amp_p_groups_menuitem:hover {
+  color: #4269a2; }
+
+.amp_p_groups_menuitem.amp_p_selected {
+  color: #4269a2;
+  border: 1px solid #848484;
+  border-right: 0px;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  background: #fff;
+  background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(#c9d4e4), to(white));
+  background: -moz-linear-gradient(0% 100% 0deg, #c9d4e4, white);
+  -webkit-box-shadow: 1px 1px 4px #dfdfdf;
+  -moz-box-shadow: 1px 1px 4px #dfdfdf; }
+
+.amp_p_groups_findgroup {
+  margin: 25px auto 0px auto;
+  width: 88px;
+  height: 20px;
+  background: url(img/elexio/images/Button_FindGroup.png); }
+
+.amp_p_groups_findgroup:hover {
+  background-position: 0px -20px; }
+
+#group_members_title {
+  display: block;
+  height: 20px;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  width: 500px; }
+
+.amp_p_groups_emailall {
+  display: block;
+  width: 121px;
+  height: 20px;
+  margin: 0 0 0 10px;
+  padding: 0;
+  float: right;
+  background: url(img/elexio/images/Button_EmailMembers.png);
+  cursor: default; }
+
+.amp_p_groups_emailall:hover {
+  background-position: 0px -20px; }
+
+.amp_p_groups_enterattendance {
+  display: block;
+  width: 151px;
+  height: 20px;
+  float: right;
+  background: url(img/elexio/images/Button_EnterGroupAttendance.png);
+  cursor: default; }
+
+.amp_p_groups_enterattendance:hover {
+  background-position: 0px -20px; }
+
+.amp_p_groups_members {
+  width: 500px;
+  border: 1px solid #848484;
+  margin: 5px 0px 25px 0px; }
+
+.amp_p_groups_members thead td {
+  padding: 10px 8px 10px 8px;
+  color: #4269a2;
+  font-size: 10px;
+  font-weight: bold;
+  background: #d1dbe8;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#bbc9dd), to(#eff2f7));
+  background: -moz-linear-gradient(0% 0% 270deg, #bbc9dd, #eff2f7);
+  border-left: 1px solid #848484; }
+
+.amp_p_groups_members thead td:first-child {
+  border-left: 0px; }
+
+.amp_p_groups_members tbody tr td {
+  padding: 8px;
+  color: #000;
+  border-top: 1px solid #848484;
+  border-left: 1px solid #848484;
+  background: #fff; }
+
+.amp_p_groups_members tbody tr td:first-child {
+  border-left: 0px; }
+
+.amp_p_groups_members tbody tr.amp_p_groups_altrow td {
+  background: #f1f1f1; }
+
+.amp_p_groups_members tbody td a {
+  color: #4269a2;
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: Tahoma, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  background: transparent; }
+
+.amp_p_groups_links {
+  width: 500px; }
+
+.amp_p_groups_links td {
+  padding: 2px 4px; }
+
+.amp_p_groups_addfieldrow {
+  float: right;
+  margin: 0 267px 4px 0; }
+
+.amp_p_groups_nolinks {
+  display: none; }
+
+.amp_p_groups_linkdelete {
+  width: 56px; }
+
+.amp_p_groups_linkdelete div {
+  height: 20px;
+  width: 49px;
+  background: url(img/elexio/images/Button_Delete.png) no-repeat; }
+
+.amp_p_groups_linkdelete div:hover {
+  background-position: 0px -20px; }
+
+.amp_p_groups_links a {
+  color: #4269a2;
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: Tahoma, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  background: transparent; }
+
+.amp_p_groups_linkadd {
+  width: 56px; }
+
+.amp_p_groups_linkadd div {
+  width: 49px;
+  height: 20px;
+  background: url(img/elexio/images/Button_Add.png) no-repeat; }
+
+.amp_p_groups_linkadd div:hover {
+  background-position: 0px -20px; }
+
+.amp_p_groups_nogroups {
+  text-align: center; }
+
+.amp_p_groups_printer {
+  float: right; }
+
+/**************/
+/* Ministries */
+/**************/
+.amp_p_ministries_left {
+  float: left;
+  width: 150px; }
+
+.amp_p_ministries_right {
+  position: relative;
+  float: left;
+  margin-left: 10px; }
+
+.amp_p_ministries_menu {
+  padding: 15px 9px 10px 0px;
+  background: url(img/elexio/images/Groups_MenuBg_Top.png) repeat-y right top; }
+
+.amp_p_ministries_menubottom {
+  height: 20px;
+  background: url(img/elexio/images/Groups_MenuBg_Bottom.png) no-repeat right top; }
+
+.amp_p_ministries_menuitems {
+  padding-left: 3px;
+  overflow: hidden; }
+
+.amp_p_ministries_menuitem {
+  padding: 4px 15px 4px 6px;
+  text-align: right;
+  margin-top: 5px;
+  font-size: 11px;
+  cursor: pointer; }
+
+.amp_p_ministries_menuitem:hover {
+  color: #4269a2; }
+
+.amp_p_ministries_menuitem.amp_p_selected {
+  color: #4269a2;
+  border: 1px solid #848484;
+  border-right: 0px;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  background: #fff;
+  background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(#c9d4e4), to(white));
+  background: -moz-linear-gradient(0% 100% 0deg, #c9d4e4, white);
+  -webkit-box-shadow: 1px 1px 4px #dfdfdf;
+  -moz-box-shadow: 1px 1px 4px #dfdfdf; }
+
+.amp_p_ministries_findgroup {
+  margin: 25px auto 0px auto;
+  width: 88px;
+  height: 20px;
+  background: url(img/elexio/images/Button_FindGroup.png);
+  cursor: pointer; }
+
+.amp_p_ministries_emailall {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  width: 121px;
+  height: 20px;
+  background: url(img/elexio/images/Button_EmailMembers.png);
+  cursor: default; }
+
+.amp_p_ministries_emailall:hover {
+  background-position: 0px -20px; }
+
+.amp_p_ministries_members {
+  width: 500px;
+  border: 1px solid #848484;
+  margin: 5px 0px 25px 0px; }
+
+.amp_p_ministries_members thead td {
+  padding: 10px 8px 10px 8px;
+  color: #4269a2;
+  font-size: 10px;
+  font-weight: bold;
+  background: #d1dbe8;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#bbc9dd), to(#eff2f7));
+  background: -moz-linear-gradient(0% 0% 270deg, #bbc9dd, #eff2f7);
+  border-left: 1px solid #848484; }
+
+.amp_p_ministries_members thead td:first-child {
+  border-left: 0px; }
+
+.amp_p_ministries_members tbody tr td {
+  padding: 8px;
+  color: #000;
+  border-top: 1px solid #848484;
+  border-left: 1px solid #848484;
+  background: #fff; }
+
+.amp_p_ministries_members tbody tr td:first-child {
+  border-left: 0px; }
+
+.amp_p_ministries_members tbody tr.amp_p_ministries_altrow td {
+  background: #f1f1f1; }
+
+.amp_p_ministries_members tbody td a {
+  color: #4269a2;
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: Tahoma, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  background: transparent; }
+
+.amp_p_ministries_links {
+  width: 500px; }
+
+.amp_p_ministries_links td {
+  padding: 4px; }
+
+.amp_p_ministries_nolinks {
+  display: none; }
+
+.amp_p_ministries_linkdelete {
+  width: 56px; }
+
+.amp_p_ministries_linkdelete div {
+  height: 20px;
+  width: 49px;
+  background: url(img/elexio/images/Button_Delete.png) no-repeat; }
+
+.amp_p_ministries_linkdelete div:hover {
+  background-position: 0px -20px; }
+
+.amp_p_ministries_links a {
+  color: #4269a2;
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: Tahoma, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  background: transparent; }
+
+.amp_p_ministries_linkadd {
+  width: 56px; }
+
+.amp_p_ministries_linkadd div {
+  width: 49px;
+  height: 20px;
+  background: url(img/elexio/images/Button_Add.png) no-repeat; }
+
+.amp_p_ministries_linkadd div:hover {
+  background-position: 0px -20px; }
+
+.amp_p_ministries_noministries {
+  text-align: center; }
+
+/**********/
+/* Events */
+/**********/
+.amp_p_events_upcoming {
+  width: 660px;
+  margin: 0 0 20px; }
+
+.amp_p_events_upcoming tbody tr td {
+  padding: 10px;
+  color: #000;
+  border-bottom: 1px solid #e0e0e0; }
+
+.amp_p_events_upcoming_date {
+  width: 52px;
+  border: 0;
+  padding: 0; }
+
+.amp_p_events_upcoming_infoarea {
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-weight: normal;
+  font-size: 11px;
+  color: #777777;
+  width: 450px; }
+
+.amp_p_events_upcoming_date {
+  background: url(img/elexio/images/calendar_icon.png) top left no-repeat;
+  display: block;
+  height: 49px;
+  width: 51px; }
+
+.amp_p_events_upcoming_month {
+  display: block;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 2px 0px 0 3px;
+  height: 17px;
+  width: 39px;
+  overflow: hidden;
+  text-align: center; }
+
+.amp_p_events_upcoming_day {
+  display: block;
+  color: #717171;
+  padding: 0;
+  height: 20px;
+  width: 48px;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center; }
+
+.amp_p_events_list_title_ue {
+  float: left;
+  font-size: 12px;
+  font-weight: bold;
+  color: #3c3c3c;
+  width: 300px; }
+
+.amp_p_events_list_time_ue {
+  float: right;
+  font-size: 11px;
+  font-weight: bold;
+  font-style: italic;
+  color: #777777;
+  text-align: right;
+  width: 145px; }
+
+.amp_p_events_list_description_ue {
+  float: left;
+  width: 450px;
+  padding: 2px 0 4px;
+  text-align: left; }
+
+.amp_p_events_list_cost_ue {
+  color: #3c3c3c;
+  float: left;
+  width: 200px; }
+
+.amp_p_events_list_location_ue {
+  color: #3c3c3c;
+  float: right;
+  text-align: right;
+  width: 245px; }
+
+.amp_p_events_list_register_button {
+  background: url(img/elexio/images/button.png) no-repeat 0px 0px;
+  width: 97px;
+  height: 21px;
+  cursor: pointer;
+  text-align: center;
+  font: 12px black Arial;
+  line-height: 21px; }
+
+.amp_p_events_list_register_button:hover {
+  background-position: 0 -21px; }
+
+.amp_p_events_list_unregister_button {
+  background: url(img/elexio/images/Button_Unregister.png) top left no-repeat;
+  margin: 3px 0;
+  height: 21px;
+  width: 97px;
+  display: block;
+  text-indent: -9999px; }
+
+.amp_p_events_list_unregister_button:hover {
+  background-position: 0 -21px; }
+
+.amp_p_events_list_signup_decline {
+  background: url(img/elexio/images/button.png) no-repeat 0px 0px;
+  width: 97px;
+  height: 21px;
+  cursor: pointer;
+  text-align: center;
+  font: 12px black Arial;
+  line-height: 21px; }
+
+.amp_p_events_list_signup_decline:hover {
+  background-position: 0 -21px; }
+
+/******** REGISTER LITEBOX STYLES ************/
+.amp_p_events_registercontent .amp_p_litebox_button_zone {
+  float: left;
+  padding: 20px 0 0;
+  width: 530px; }
+
+.amp_p_litebox_description {
+  width: 300px;
+  padding: 0 0 10px;
+  text-align: left;
+  font-size: 11px;
+  color: #777777; }
+
+.amp_p_litebox_wrapper {
+  float: left;
+  width: 290px;
+  padding: 0;
+  color: #777777;
+  font-family: Tahoma,Helvetica,sans-serif;
+  font-size: 12px;
+  font-weight: normal; }
+
+.amp_p_litebox_familymember {
+  display: block;
+  float: left;
+  width: 149px; }
+
+.amp_p_litebox_button_zone {
+  float: left;
+  padding: 20px 0 0;
+  width: 300px; }
+
+.amp_p_litebox_button_cancel {
+  background: url(img/elexio/images/Button_Cancel.png) top left no-repeat;
+  float: right;
+  height: 21px;
+  width: 72px;
+  display: block;
+  margin-left: 3px;
+  text-indent: -9999px; }
+
+.amp_p_litebox_button_cancel:hover {
+  background-position: 0 -21px; }
+
+.amp_p_litebox_button_back {
+  background: url(img/elexio/images/back.png) top left no-repeat;
+  float: right;
+  height: 21px;
+  width: 97px;
+  display: block;
+  margin-left: 3px;
+  text-indent: -9999px; }
+
+.amp_p_litebox_button_back:hover {
+  background-position: 0 -21px; }
+
+.amp_p_litebox_button_ok {
+  background: url(img/elexio/images/Button_ok.png) top left no-repeat;
+  float: right;
+  height: 21px;
+  width: 72px;
+  display: block;
+  text-indent: -9999px;
+  cursor: pointer; }
+
+.amp_p_litebox_button_ok:hover {
+  background-position: 0 -21px; }
+
+.amp_p_litebox_button_reset {
+  background: url(img/elexio/images/Button_Reset.png) top left no-repeat;
+  float: right;
+  height: 21px;
+  width: 72px;
+  display: block;
+  margin-left: 3px;
+  text-indent: -9999px; }
+
+.amp_p_litebox_button_reset:hover {
+  background-position: 0 -21px; }
+
+.amp_p_litebox_button_save {
+  background: url(img/elexio/images/Button_Save.png) top left no-repeat;
+  float: right;
+  height: 21px;
+  width: 72px;
+  display: block;
+  margin-left: 3px;
+  text-indent: -9999px; }
+
+.amp_p_litebox_button_save:hover {
+  background-position: 0 -21px; }
+
+.amp_p_clear {
+  clear: both;
+  display: none; }
+
+.amp_p_litebox_button_next {
+  background: url(img/elexio/images/next.png) top left no-repeat;
+  float: right;
+  height: 35px;
+  width: 125px;
+  display: block;
+  text-indent: -9999px;
+  cursor: pointer; }
+
+.amp_p_litebox_button_next:hover {
+  background-position: 0 -35px; }
+
+/*********************************************/
+.amp_p_events_filter {
+  padding: 0px 0px 15px 0px; }
+
+.amp_p_events_filter span {
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-weight: normal;
+  font-size: 12px;
+  color: #777777; }
+
+.amp_p_events_filter select {
+  font-size: 11px;
+  outline: none;
+  margin-left: 5px; }
+
+.amp_p_events_history {
+  width: 500px;
+  border: 1px solid #848484;
+  margin: 5px 0px 25px 0px; }
+
+.amp_p_events_history thead td {
+  padding: 10px 8px 10px 8px;
+  color: #4269a2;
+  font-size: 10px;
+  font-weight: bold;
+  background: #d1dbe8;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#bbc9dd), to(#eff2f7));
+  background: -moz-linear-gradient(0% 0% 270deg, #bbc9dd, #eff2f7);
+  border-left: 1px solid #848484; }
+
+.amp_p_events_history thead td:first-child {
+  border-left: 0px; }
+
+.amp_p_events_history tbody tr td {
+  padding: 8px;
+  color: #000;
+  border-top: 1px solid #848484;
+  border-left: 1px solid #848484;
+  background: #fff; }
+
+.amp_p_events_history tbody tr td:first-child {
+  border-left: 0px; }
+
+.amp_p_events_history tbody tr.amp_p_events_altrow td {
+  background: #f1f1f1; }
+
+.amp_p_events_history tbody td .amp_p_events_list_title {
+  font-weight: bold; }
+
+.amp_p_events_history tbody td .amp_p_events_list_description {
+  font-style: italic; }
+
+.amp_p_eventsregister_wrapper {
+  float: left;
+  width: 370px; }
+
+.amp_p_events_register_border {
+  float: left;
+  background: #000;
+  filter: alpha(opacity=50);
+  -moz-opacity: .5;
+  opacity: .5;
+  border-radius: 20px;
+  -moz-border-radius: 20px; }
+
+.amp_p_events_registercontent {
+  float: left;
+  width: 300px;
+  padding: 20px;
+  margin: 10px;
+  background: #f7f7f7;
+  background: -webkit-gradient(linear, 0% 10%, 0% 100%, from(white), to(#ededed));
+  background: -moz-linear-gradient(0% 10% 270deg, white, #ededed);
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  overflow: hidden; }
+
+.amp_p_events_unregistercontent {
+  float: left;
+  padding: 10px;
+  border: 1px Solid black;
+  background: White;
+  width: 300px; }
+
+/**********/
+/* Giving */
+/**********/
+.amp_p_giving_give {
+  width: 670px;
+  height: 87px;
+  margin: 5px auto 15px auto;
+  cursor: pointer;
+  background: url(img/elexio/images/ClickHereToGiveNow.png) center center no-repeat;
+  /*background: url(img/elexio/images/Button_GiveOnline.png) no-repeat;*/ }
+
+div.amp_p_giving_scheduled {
+  margin: 0px 0px 5px 0px; }
+
+div.amp_p_giving_scheduled_hidden {
+  margin: 5px 0px 10px 0px;
+  text-align: center; }
+
+table.amp_p_giving_scheduled {
+  width: 645px;
+  border: 1px solid #848484; }
+
+table.amp_p_giving_scheduled > thead > tr > td {
+  padding: 10px 8px 10px 8px;
+  color: #4269a2;
+  font-size: 10px;
+  font-weight: bold;
+  background: #d1dbe8;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#bbc9dd), to(#eff2f7));
+  background: -moz-linear-gradient(0% 0% 270deg, #bbc9dd, #eff2f7);
+  border-left: 1px solid #848484; }
+
+table.amp_p_giving_scheduled > thead > tr > td:first-child {
+  border-left: 0px; }
+
+table.amp_p_giving_scheduled > tbody > tr > td {
+  padding: 8px;
+  color: #000;
+  border-top: 1px solid #848484;
+  border-left: 1px solid #848484;
+  background: #fff;
+  vertical-align: top; }
+
+table.amp_p_giving_scheduled > tbody > tr > td:first-child {
+  border-left: 0px; }
+
+table.amp_p_giving_scheduled > tbody > tr.amp_p_giving_altrow > td {
+  background: #f1f1f1; }
+
+table.amp_p_giving_designations td {
+  padding: 0px 3px 3px 3px;
+  vertical-align: top; }
+
+table.amp_p_giving_scheduled > tbody > tr > td.amp_p_giving_amount {
+  text-align: right; }
+
+table.amp_p_giving_scheduled > tbody > td a {
+  color: #4269a2;
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: Tahoma, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  background: transparent; }
+
+table.amp_p_giving_history {
+  width: 645px;
+  border: 1px solid #848484; }
+
+div.amp_p_giving_history_hidden {
+  margin: 5px 0px 10px 0px;
+  text-align: center;
+  clear: both; }
+
+table.amp_p_giving_history {
+  clear: both; }
+
+table.amp_p_giving_history > thead > tr > td {
+  padding: 10px 8px 10px 8px;
+  color: #4269a2;
+  font-size: 10px;
+  font-weight: bold;
+  background: #d1dbe8;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#bbc9dd), to(#eff2f7));
+  background: -moz-linear-gradient(0% 0% 270deg, #bbc9dd, #eff2f7);
+  border-left: 1px solid #848484; }
+
+table.amp_p_giving_history > thead > tr > td:first-child {
+  border-left: 0px; }
+
+table.amp_p_giving_history > tbody > tr > td {
+  padding: 8px;
+  color: #000;
+  border-top: 1px solid #848484;
+  border-left: 1px solid #848484;
+  background: #fff;
+  vertical-align: top; }
+
+table.amp_p_giving_history > tbody > tr > td:first-child {
+  border-left: 0px; }
+
+table.amp_p_giving_history > tbody > tr.amp_p_giving_altrow > td {
+  background: #f1f1f1; }
+
+table.amp_p_giving_history > tbody > tr > td.amp_p_giving_amount {
+  text-align: right; }
+
+.amp_p_giving_totalrow td {
+  text-align: right; }
+
+.amp_p_giving_totalrow td span {
+  color: #4269a2;
+  font-weight: bold; }
+
+.amp_p_giving_totalrow td.amp_p_giving_amount {
+  text-align: right;
+  font-weight: bold; }
+
+.amp_p_giving_historytitle {
+  float: left;
+  padding-top: 2px; }
+
+.amp_p_giving_historyrange {
+  float: left;
+  margin-bottom: 12px; }
+
+.amp_p_giving_historyrange div {
+  float: left;
+  margin-left: 10px; }
+
+.amp_p_giving_print {
+  display: inline-block;
+  vertical-align: -6px;
+  width: 100px;
+  height: 21px;
+  background: url(img/elexio/images/Button_Print.png) no-repeat 0px 0px;
+  cursor: pointer;
+  float: right; }
+
+.amp_p_giving_print:hover {
+  background-position: 0px -21px; }
+
+/***************/
+/* Give Online */
+/***************/
+.amp_p_container_giveonline {
+  width: 530px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.amp_p_giveonline_notice {
+  margin: 10px 0 15px; }
+
+.amp_p_giveonline_acct_add {
+  display: inline-block;
+  vertical-align: middle;
+  width: 49px;
+  height: 20px;
+  margin: auto auto 4px 8px;
+  background: url(img/elexio/images/Button_Add.png) no-repeat; }
+
+.amp_p_giveonline_acct_add:hover {
+  background-position: 0px -20px; }
+
+.amp_p_giveonline_acct_delete {
+  display: inline-block;
+  vertical-align: middle;
+  width: 49px;
+  height: 20px;
+  margin: auto auto 4px 5px;
+  background: url(img/elexio/images/Button_Delete.png) no-repeat; }
+
+.amp_p_giveonline_acct_delete:hover {
+  background-position: 0px -20px; }
+
+.amp_p_giveonline_amounts {
+  margin: 10px 0px 15px 0px; }
+
+.amp_p_giveonline_amount {
+  margin: 0px 0px 10px 0px; }
+
+.amp_p_giveonline_amount input[type='text'] {
+  margin: 0px 15px 0px 0px;
+  width: 100px; }
+
+.amp_p_giveonline_amount_add {
+  background: url(img/elexio/images/Icon_Plus.gif) no-repeat left center;
+  padding-left: 20px; }
+
+.amp_p_giveonline_removeamount {
+  width: 20px;
+  height: 20px;
+  background: url(img/elexio/images/Icon_X.gif) no-repeat 0px 0px;
+  margin-left: 8px;
+  cursor: pointer;
+  vertical-align: top;
+  display: none; }
+
+.amp_p_giveonline_dateinfo {
+  padding: 0;
+  white-space: nowrap;
+  width: 550px; }
+
+#amp_p_giveonline_recurrence {
+  float: left;
+  display: block;
+  padding: 5px 3px 0 0; }
+
+#amp_p_giveonline_chargeaccount {
+  float: left;
+  display: block;
+  padding: 5px 3px 0 15px; }
+
+#amp_p_giveonline_frequency {
+  float: left; }
+
+.amp_p_giveonline_dateinfo img {
+  margin: 0px 5px 0px 3px;
+  vertical-align: top; }
+
+.amp_p_giveonline_comments {
+  margin: 10px 0px 10px 0px; }
+
+.amp_p_giveonline_comments textarea {
+  width: 500px;
+  height: 50px; }
+
+.amp_p_giveonline_reminder_once {
+  margin: 0 0 20px 0; }
+
+.amp_p_giveonline_reminder_once,
+.amp_p_giveonline_reminder_recur {
+  display: none; }
+
+.amp_p_giveonline_reminder_once_details {
+  display: none;
+  border-left: 1px solid #bbbbbb;
+  margin: 5px 0px 5px 20px;
+  padding: 3px 0px 3px 10px; }
+
+.amp_p_giveonline_reminder_once_details img {
+  margin: 0px 5px 0px 3px;
+  vertical-align: top; }
+
+.amp_p_giveonline_reminder_recur select {
+  margin: 0px 5px 0px 5px; }
+
+.amp_p_giveonline_actions {
+  margin-top: 10px;
+  text-align: center; }
+
+.amp_p_giveonline_donate {
+  background: url(img/elexio/images/Button_Submit.png) no-repeat 0px 0px;
+  width: 71px;
+  height: 21px;
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer; }
+
+.amp_p_giveonline_donate:hover {
+  background-position: 0px -21px; }
+
+.amp_p_giveonline_cancel {
+  background: url(img/elexio/images/Button_Cancel.png) no-repeat 0px 0px;
+  width: 71px;
+  height: 21px;
+  display: inline-block;
+  cursor: pointer; }
+
+.amp_p_giveonline_cancel:hover {
+  background-position: 0px -21px; }
+
+/**********************/
+/* Add Payment Method */
+/**********************/
+.amp_p_financialaccount {
+  width: 470px;
+  height: 340px;
+  position: relative;
+  color: #777777;
+  font-family: Tahoma,Helvetica,sans-serif;
+  font-size: 12px;
+  font-weight: normal; }
+
+.amp_p_financialaccount_border {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  filter: alpha(opacity=50);
+  -moz-opacity: .5;
+  opacity: .5;
+  border-radius: 20px;
+  -moz-border-radius: 20px; }
+
+.amp_p_financialaccount_content {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 410px;
+  height: 280px;
+  padding: 20px;
+  margin: 10px;
+  background: #f7f7f7;
+  background: -webkit-gradient(linear, 0% 10%, 0% 100%, from(white), to(#ededed));
+  background: -moz-linear-gradient(0% 10% 270deg, white, #ededed);
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  overflow: hidden; }
+
+#amp_p_financialaccount_ccdetails {
+  display: block;
+  border-top: 1px dashed #777777;
+  margin-top: 0px;
+  padding-top: 15px; }
+
+.amp_p_financialaccount_account_type {
+  padding: 0 0 5px 0; }
+
+#amp_p_financialaccount_bankdetails {
+  display: none;
+  border-top: 1px dashed #777777;
+  margin-top: 10px;
+  padding-top: 10px;
+  margin-bottom: 0px; }
+
+#amp_p_financialaccount_type_cc {
+  margin-left: 10px; }
+
+#amp_p_financialaccount_type_bank {
+  margin-left: 20px; }
+
+.amp_p_financialaccount_row {
+  margin-bottom: 10px; }
+
+#amp_p_financialaccount_ccno {
+  width: 160px; }
+
+.amp_p_financialaccount_cc_visa,
+.amp_p_financialaccount_cc_mastercard,
+.amp_p_financialaccount_cc_amex,
+.amp_p_financialaccount_cc_discover {
+  display: inline-block;
+  vertical-align: top;
+  width: 30px;
+  height: 20px;
+  background: no-repeat 0px -20px;
+  margin-left: 5px;
+  margin-top: 3px; }
+
+.amp_p_financialaccount_cc_visa {
+  background-image: url(img/elexio/images/Icon_CC_Visa.png);
+  margin-left: 10px; }
+
+.amp_p_financialaccount_cc_mastercard {
+  background-image: url(img/elexio/images/Icon_CC_Mastercard.png); }
+
+.amp_p_financialaccount_cc_amex {
+  background-image: url(img/elexio/images/Icon_CC_Amex.png); }
+
+.amp_p_financialaccount_cc_discover {
+  background-image: url(img/elexio/images/Icon_CC_Discover.png); }
+
+.amp_p_financialaccount_cc_selected {
+  background-position: 0px 0px; }
+
+#amp_p_financialaccount_cvv {
+  width: 25px; }
+
+.amp_p_financialaccount_cvv_sample {
+  display: inline-block;
+  vertical-align: top;
+  width: 47px;
+  height: 21px;
+  background: url(img/elexio/images/Icon_cvv2.gif) no-repeat 0px 0px;
+  margin: 3px 15px 0 5px; }
+
+.amp_p_financialaccount select {
+  margin-right: 5px; }
+
+#amp_p_financialaccount_firstname,
+#amp_p_financialaccount_lastname {
+  width: 292px; }
+
+#amp_p_financialaccount_address {
+  width: 263px; }
+
+#amp_p_financialaccount_city {
+  width: 125px;
+  margin-right: 10px; }
+
+#amp_p_financialaccount_state {
+  width: 25px;
+  margin-right: 10px; }
+
+#amp_p_financialaccount_zip {
+  width: 58px; }
+
+#amp_p_financialaccount_country {
+  width: 75px; }
+
+.amp_p_financialaccount_actions {
+  text-align: center;
+  margin-top: 10px; }
+
+.amp_p_financialaccount_save {
+  display: inline-block;
+  width: 71px;
+  height: 21px;
+  background: url(img/elexio/images/Button_Submit.png) no-repeat 0px 0px;
+  cursor: pointer; }
+
+.amp_p_financialaccount_save:hover {
+  background-position: 0px -21px; }
+
+.amp_p_financialaccount_cancel {
+  display: inline-block;
+  width: 71px;
+  height: 21px;
+  background: url(img/elexio/images/Button_Cancel.png) no-repeat 0px 0px;
+  cursor: pointer;
+  margin-left: 10px; }
+
+.amp_p_financialaccount_cancel:hover {
+  background-position: 0px -21px; }
+
+/**************/
+/* Find Group */
+/**************/
+.amp_p_findgroup {
+  background: transparent url(img/elexio/images/litebox_back.png) top left no-repeat;
+  font-family: Arial,Helvetica,Sans-Serif;
+  height: 550px;
+  overflow: hidden;
+  padding: 10px;
+  width: 670px; }
+
+.amp_p_findgroup_content {
+  width: 640px;
+  height: 490px;
+  padding: 10px 0 0 10px;
+  overflow: hidden; }
+
+.amp_p_findgroup_iframe {
+  width: 640px;
+  height: 490px; }
+
+.amp_p_findgroup_locationinfo {
+  margin-bottom: 15px;
+  overflow: hidden;
+  width: 630px; }
+
+.amp_p_findgroup_locationinfo span {
+  float: left;
+  color: #777777;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  margin-right: 5px; }
+
+.amp_p_findgroup_address {
+  float: left;
+  width: 325px; }
+
+.amp_p_findgroup_search {
+  float: left;
+  vertical-align: -5px;
+  display: inline-block;
+  width: 72px;
+  height: 21px;
+  background: url(img/elexio/images/Button_Search.png) no-repeat 0px 0px;
+  margin-left: 5px;
+  cursor: pointer; }
+
+.amp_p_findgroup_search:hover {
+  background: url(img/elexio/images/Button_Search.png) no-repeat 0px -21px; }
+
+.amp_p_findgroup_filtersview {
+  background: #e7e7e7;
+  border: 1px solid #cccccc;
+  display: none;
+  font-family: Arial,Helvetica,Sans-Serif;
+  height: 378px;
+  width: 628px;
+  overflow: auto;
+  position: relative;
+  padding-top: 10px; }
+
+.amp_p_findgroup_filters {
+  float: left;
+  margin-left: 8px; }
+
+.amp_p_findgroup_filters_header {
+  color: #4269A2;
+  font-weight: bold;
+  font-size: 13px; }
+
+.amp_p_findgroup_filters_item {
+  color: #777777;
+  margin: 5px 0px 0px 5px;
+  font-size: 11px; }
+
+.amp_p_findgroup_filter_applyfilters {
+  background: url(img/elexio/images/Button_ApplyFilter.png) no-repeat 0px 0px;
+  display: block;
+  height: 21px;
+  width: 97px;
+  bottom: 15px;
+  left: 155px;
+  position: absolute;
+  text-indent: -99999px;
+  cursor: pointer; }
+
+.amp_p_findgroup_filter_applyfilters:hover {
+  background: url(img/elexio/images/Button_ApplyFilter.png) no-repeat 0px -21px; }
+
+.amp_p_findgroup_listview {
+  display: none;
+  height: 380px;
+  margin-right: 10px;
+  padding-top: 10px;
+  width: 630px;
+  overflow: auto; }
+
+.amp_p_findgroup_listview_main {
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid #e9e9e9;
+  margin-bottom: 10px; }
+
+.amp_p_findgroup_mapview {
+  width: 630px;
+  height: 390px; }
+
+.amp_p_findgroup_viewtoggle {
+  background: url(img/elexio/images/viewbar.jpg) no-repeat;
+  display: block;
+  height: 28px;
+  width: 630px;
+  margin: 0;
+  padding: 0; }
+
+.amp_p_findgroup_mapview_button {
+  background: url(img/elexio/images/map_view_button.jpg) no-repeat 0px 0px;
+  cursor: pointer;
+  display: block;
+  float: left;
+  height: 28px;
+  margin-left: 58px;
+  text-indent: -99999px;
+  width: 45px; }
+
+.amp_p_findgroup_mapview_button:hover,
+.amp_p_findgroup_mapview_button.amp_p_findgroup_selected {
+  background-position: 0px -28px; }
+
+.amp_p_findgroup_list_button {
+  background: url(img/elexio/images/list_view_button.jpg) no-repeat 0px 0px;
+  cursor: pointer;
+  display: block;
+  float: left;
+  height: 28px;
+  text-indent: -99999px;
+  width: 43px; }
+
+.amp_p_findgroup_list_button:hover,
+.amp_p_findgroup_list_button.amp_p_findgroup_selected {
+  background-position: 0px -28px; }
+
+.amp_p_findgroup_filters_button {
+  background: url(img/elexio/images/filters_view_button.jpg) no-repeat 0px 0px;
+  cursor: pointer;
+  display: block;
+  float: left;
+  height: 28px;
+  text-indent: -99999px;
+  width: 57px; }
+
+.amp_p_findgroup_filters_button:hover,
+.amp_p_findgroup_filters_button.amp_p_findgroup_selected {
+  background-position: 0px -28px; }
+
+.amp_p_findgroup_map {
+  height: 390px;
+  width: 630px; }
+
+.amp_p_findgroup_name {
+  font-family: Arial,Helvetica,Sans-Serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #4269a2; }
+
+.amp_p_findgroup_time {
+  color: #3c3c3c;
+  font-size: 11px;
+  font-family: Arial,Helvetica,Sans-Serif;
+  font-weight: normal;
+  padding: 0px 15Px 7px 0px; }
+
+.amp_p_findgroup_childcare {
+  color: #3c3c3c;
+  font-style: normal;
+  font-family: Arial,Helvetica,Sans-Serif;
+  font-size: 11px;
+  padding: 0px 15px 7px 0px; }
+
+.amp_p_findgroup_street {
+  font-family: Arial,Helvetica,Sans-Serif;
+  color: #3C3C3C;
+  font-style: normal;
+  font-size: 11px;
+  padding: 0px 0px 7px 0px; }
+
+.amp_p_findgroup_description {
+  font-family: Arial,Helvetica,Sans-Serif;
+  color: #777777;
+  font-size: 11px;
+  font-weight: normal;
+  padding-bottom: 7px; }
+
+.amp_p_findgroup_topic {
+  font-family: Arial,Helvetica,Sans-Serif;
+  color: #777777;
+  font-size: 11px;
+  font-weight: normal;
+  padding-bottom: 7px; }
+
+.amp_p_findgroup_location {
+  display: none; }
+
+.amp_p_findgroup_leader_header {
+  color: #3c3c3c;
+  font-size: 11px;
+  font-family: Arial,Helvetica,Sans-Serif;
+  font-weight: normal;
+  padding-bottom: 3px; }
+
+.amp_p_findgroup_leader {
+  color: #3C3C3C;
+  font-family: Arial,Helvetica,Sans-Serif;
+  font-size: 11px;
+  padding-bottom: 5px; }
+
+.amp_p_findgroup_leader_name_communication {
+  padding-left: 5px; }
+
+.amp_p_findgroup_listview_name {
+  font-size: 13px;
+  font-family: Arial,Helvetica,Sans-Serif;
+  font-weight: bold;
+  color: #4269a2;
+  cursor: pointer;
+  display: inline; }
+
+.amp_p_findgroup_listview_time {
+  color: #3c3c3c;
+  font-family: Arial,Helvetica,Sans-Serif;
+  font-size: 11px;
+  font-weight: normal;
+  padding: 0 15px 7px 0; }
+
+.amp_p_findgroup_listview_location {
+  color: #3c3c3c;
+  font-style: normal;
+  font-family: Arial,Helvetica,Sans-Serif;
+  font-size: 11px;
+  padding: 0px 15px 7px 0px; }
+
+.amp_p_findgroup_listview_childcare {
+  color: #3c3c3c;
+  font-style: normal;
+  font-family: Arial,Helvetica,Sans-Serif;
+  font-size: 11px;
+  padding: 0px 15px 7px 0px; }
+
+.amp_p_findgroup_listview_name:hover {
+  text-decoration: underline; }
+
+.amp_p_findgroup_listview_description {
+  padding: 0 0 5px 0px;
+  color: #777777;
+  font-family: Arial,Helvetica,Sans-Serif;
+  font-weight: normal;
+  font-size: 11px; }
+
+.amp_p_findgroup_listview_distance {
+  padding: 0 0 5px 5px;
+  color: #777777;
+  font-family: Arial,Helvetica,Sans-Serif;
+  font-weight: normal;
+  font-size: 11px;
+  display: inline; }
+
+.amp_p_findgroup_listview_leaders {
+  color: #3c3c3c;
+  font-family: Arial,Helvetica,Sans-Serif;
+  font-size: 11px;
+  padding: 0 0 5px 5px; }
+
+.amp_p_findgroup_listview_address {
+  color: #3c3c3c;
+  font-family: Arial,Helvetica,Sans-Serif;
+  font-size: 11px;
+  padding: 0 0 5px 5px; }
+
+.amp_p_findgroup_cancel {
+  display: inline-block;
+  width: 71px;
+  height: 21px;
+  background: url(img/elexio/images/Button_Cancel.png) no-repeat 0px 0px;
+  cursor: pointer; }
+
+.amp_p_findgroup_cancel:hover {
+  background-position: 0px -21px;
+  height: 271px; }
+
+.amp_p_findgroup_actions {
+  text-align: center;
+  margin-top: 10px; }
+
+.amp_p_findgroup_map img {
+  border: 3px solid black; }
+
+/***************************/
+/* Groups Enter Attendance */
+/***************************/
+.amp_p_container_groups_enteratten {
+  width: 670px; }
+
+.amp_p_groupsenteratten_selectdate {
+  margin-bottom: 15px; }
+
+.amp_p_groupsenteratten_selectdate img {
+  vertical-align: bottom;
+  margin: 0px 0px 2px 3px; }
+
+#amp_p_groupsenteratten_date {
+  margin-left: 6px; }
+
+.amp_p_groupsenteratten_left {
+  float: left; }
+
+.amp_p_groupsenteratten_right {
+  float: left;
+  margin-left: 15px; }
+
+.amp_p_groupsenteratten_members {
+  border: 1px solid #848484; }
+
+.amp_p_groupsenteratten_members thead td {
+  padding: 10px 8px 10px 8px;
+  color: #4269a2;
+  font-size: 10px;
+  font-weight: bold;
+  background: #d1dbe8;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#bbc9dd), to(#eff2f7));
+  background: -moz-linear-gradient(0% 0% 270deg, #bbc9dd, #eff2f7);
+  border-left: 1px solid #848484; }
+
+.amp_p_groupsenteratten_members thead td:first-child {
+  border-left: 0px; }
+
+.amp_p_groupsenteratten_members tbody tr td {
+  padding: 8px;
+  color: #000;
+  border-top: 1px solid #848484;
+  border-left: 1px solid #848484;
+  background: #fff; }
+
+.amp_p_groupsenteratten_members tbody tr td:first-child {
+  border-left: 0px;
+  text-align: center; }
+
+.amp_p_groupsenteratten_members tbody tr.amp_p_groupsenteratten_altrow td {
+  background: #f1f1f1; }
+
+.amp_p_groupsenteratten_savechanges {
+  display: inline-block;
+  vertical-align: -6px;
+  width: 131px;
+  height: 21px;
+  background: url(img/elexio/images/Button_SaveChanges.png) no-repeat 0px 0px;
+  cursor: pointer; }
+
+.amp_p_groupsenteratten_savechanges:hover {
+  background-position: 0px -21px; }
+
+/***************/
+/* Error       */
+/***************/
+.amp_p_error_box {
+  border: 1px Solid black;
+  background: White;
+  overflow: hidden; }
+
+.amp_p_error_button {
+  background: Gray;
+  border: 1px Solid darkgrey;
+  cursor: pointer;
+  height: 20px;
+  width: 40px;
+  float: right;
+  color: Black; }
+
+.amp_p_error_button:hover {
+  background: LightGray; }
+
+/***********************/
+/* Events in an iFrame */
+/***********************/
+.pulse_events .amp_p_events_fmember {
+  margin-bottom: 15px; }
+
+.pulse_events .amp_p_events_list_signup_office,
+.pulse_events .amp_p_events_list_change_status {
+  background: #E0E6EF;
+  text-align: center;
+  font-size: 11px;
+  padding: 7px;
+  border-radius: 4px;
+  -moz-border-radius: 4px; }
+
+.pulse_events .amp_p_events_list_change_status a {
+  cursor: pointer;
+  color: Blue;
+  text-decoration: underline; }
+
+.pulse_events .amp_p_events_upcoming {
+  width: 510px; }
+
+/*table-layout:fixed;*/
+.pulse_events .amp_p_groups_right {
+  width: 510px; }
+
+.pulse_events .amp_p_events_upcoming_infoarea {
+  width: 300px; }
+
+.pulse_events .amp_p_events_list_description_ue {
+  width: 300px; }
+
+.pulse_events .amp_p_events_list_title_ue {
+  width: 150px; }
+
+.pulse_events .amp_p_groups_right {
+  margin-left: 0; }
+
+.pulse_events .amp_p_events_list_recurrencetxt {
+  font-style: italic;
+  clear: both;
+  font-weight: bold; }
+
+.amp_p_events_list_maybe_button {
+  background: url(img/elexio/images/button.png) no-repeat 0px 0px;
+  width: 97px;
+  margin: 3px 0;
+  height: 21px;
+  cursor: pointer;
+  text-align: center;
+  font: 12px black Arial;
+  line-height: 21px; }
+
+.amp_p_events_list_maybe_button:hover {
+  background-position: 0px -21px; }
+
+#pulse_registration {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 670px;
+  margin-left: -335px;
+  margin-top: -250px; }
+
+#pulse_registration .amp_p_topbar {
+  display: none; }
+
+#pulse_registration .amp_p_createuser_box {
+  position: relative;
+  margin: 10px auto;
+  padding: 20px;
+  background: White;
+  background: -webkit-gradient(linear, 0% 10%, 0% 100%, from(white), to(#ededed));
+  background: -moz-linear-gradient(0% 10% 270deg, white, #ededed);
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  overflow: hidden; }
+
+#pulse_registration .pulse_events_reg {
+  position: relative;
+  width: 610px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+#pulse_registration .pulse_events_reg_2 {
+  position: relative;
+  width: 610px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+#pulse_registration .amp_p_events_register_border {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background: #000;
+  filter: alpha(opacity=50);
+  -moz-opacity: .5;
+  opacity: .5;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  z-index: 1; }
+
+#pulse_registration .amp_p_events_registercontent {
+  position: relative;
+  width: 530px;
+  margin: 10px;
+  padding: 30px 30px 51px 30px;
+  background: White;
+  background: -webkit-gradient(linear, 0% 10%, 0% 100%, from(white), to(#ededed));
+  background: -moz-linear-gradient(0% 10% 270deg, white, #ededed);
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  overflow: hidden;
+  z-index: 2; }
+
+#pulse_registration .amp_p_events_registercontent_small {
+  position: relative;
+  width: 290px;
+  margin: 10px;
+  padding: 30px;
+  background: White;
+  background: -webkit-gradient(linear, 0% 10%, 0% 100%, from(white), to(#ededed));
+  background: -moz-linear-gradient(0% 10% 270deg, white, #ededed);
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  overflow: hidden;
+  z-index: 2; }
+
+#pulse_registration .pulse_regmember {
+  clear: both;
+  overflow: hidden;
+  line-height: 21px; }
+
+#pulse_registration .pulse_reg_options {
+  display: inline-block;
+  float: left;
+  padding: 1px 7px 1px 0;
+  width: 125px;
+  height: 19px;
+  overflow: hidden; }
+
+#pulse_registration .pulse_reg_options span {
+  display: inline-block;
+  text-indent: -999999px;
+  cursor: pointer; }
+
+#pulse_registration .pulse_reg_options .pulse_reg_yes {
+  background: url(img/elexio/images/register_button_yes.png) top left no-repeat;
+  float: left;
+  display: block;
+  width: 37px;
+  height: 19px; }
+
+#pulse_registration .pulse_reg_options .pulse_reg_yes:hover {
+  background-position: 0 -20px; }
+
+#pulse_registration .pulse_reg_options .pulse_reg_yes.selected {
+  background-position: 0 -40px; }
+
+#pulse_registration .pulse_reg_options .pulse_reg_maybe {
+  background: url(img/elexio/images/register_button_maybe.png) top left no-repeat;
+  float: left;
+  display: block;
+  width: 52px;
+  height: 19px; }
+
+#pulse_registration .pulse_reg_options .pulse_reg_maybe:hover {
+  background-position: 0 -20px; }
+
+#pulse_registration .pulse_reg_options .pulse_reg_maybe.selected {
+  background-position: 0 -40px; }
+
+#pulse_registration .pulse_reg_options .pulse_reg_no {
+  background: url(img/elexio/images/register_button_no.png) top left no-repeat;
+  float: left;
+  display: block;
+  width: 36px;
+  height: 19px; }
+
+#pulse_registration .pulse_reg_options .pulse_reg_no:hover {
+  background-position: 0 -20px; }
+
+#pulse_registration .pulse_reg_options .pulse_reg_no.selected {
+  background-position: 0 -40px; }
+
+#pulse_registration .pulse_reg_options .pulse_reg_paid {
+  display: none; }
+
+#pulse_registration .pulse_reg_options .pulse_reg_paid.selected {
+  display: block;
+  text-indent: 0; }
+
+#pulse_registration .pulse_reg_options .pulse_hidden {
+  display: none; }
+
+#pulse_registration .pulse_reg_selectall,
+#pulse_registration .pulse_reg_selectnone {
+  cursor: pointer;
+  font-size: 12px;
+  color: #4269a2;
+  text-decoration: none; }
+
+#pulse_registration .pulse_reg_selectall:hover,
+#pulse_registration .pulse_reg_selectnone:hover {
+  color: #4269a2;
+  text-decoration: underline; }
+
+#pulse_registration .pulse_reg_options span.selected {
+  background-position: 0 -40px; }
+
+#pulse_registration .pulse_regname {
+  float: left;
+  line-height: 21px;
+  height: 21px;
+  color: #000;
+  font-size: 12px; }
+
+#pulse_registration .pulse_regamount {
+  float: right;
+  font-size: 12px;
+  text-align: center;
+  color: #000; }
+
+#pulse_registration .pulse_total {
+  text-align: right;
+  margin: 0 0 50px;
+  padding: 0 52px;
+  font-size: 18px;
+  width: 428px;
+  float: left; }
+
+#pulse_registration .pulse_total .pulse_regamount {
+  font-size: 18px;
+  color: #777; }
+
+#pulse_registration .pulse_total .pulse_regcount {
+  padding-right: 10px;
+  float: left; }
+
+#pulse_registration .pulse_events_methods {
+  position: relative;
+  width: 370px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+#pulse_registration .pulse_paymethod {
+  padding: 5px;
+  margin: 5px;
+  border: 1px Solid #b7b7b7;
+  background: #f7f7f7;
+  background: -webkit-gradient(linear, 0% 10%, 0% 100%, from(#fefefe), to(#e5e5e5));
+  background: -moz-linear-gradient(0% 10% 270deg, #fefefe, #e5e5e5);
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  text-align: center;
+  cursor: pointer; }
+
+#pulse_registration .pulse_addnewmethod {
+  padding: 5px;
+  margin: 5px;
+  border: 1px Solid #b7b7b7;
+  background: #f7f7f7;
+  background: -webkit-gradient(linear, 0% 10%, 0% 100%, from(#fefefe), to(#e5e5e5));
+  background: -moz-linear-gradient(0% 10% 270deg, #fefefe, #e5e5e5);
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  text-align: center;
+  cursor: pointer; }
+
+#pulse_registration .pulse_paymethod:hover {
+  color: #000;
+  padding: 5px;
+  margin: 5px;
+  border: 1px Solid #9ba2ab;
+  background: #d6dfed;
+  background: -webkit-gradient(linear, 0% 10%, 0% 100%, from(#d6dfed), to(#c1c9d6));
+  background: -moz-linear-gradient(0% 10% 270deg, #d6dfed, #c1c9d6);
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  text-align: center;
+  cursor: pointer; }
+
+#pulse_registration .pulse_addnewmethod:hover {
+  color: #000;
+  padding: 5px;
+  margin: 5px;
+  border: 1px Solid #9ba2ab;
+  background: #d6dfed;
+  background: -webkit-gradient(linear, 0% 10%, 0% 100%, from(#d6dfed), to(#c1c9d6));
+  background: -moz-linear-gradient(0% 10% 270deg, #d6dfed, #c1c9d6);
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  text-align: center;
+  cursor: pointer; }
+
+#pulse_registration .pulse_events_addpaymethod {
+  position: relative;
+  width: 470px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+#pulse_registration .pulse_events_confirm {
+  position: relative;
+  width: 370px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+#pulse_registration .pulse_confirm_regamount {
+  font-size: 24px;
+  padding: 10px 0;
+  text-align: center; }
+
+#pulse_registration .pulse_events_confirm .pulse_events_confirm_processing {
+  display: none; }
+
+#pulse_registration .pulse_events_confirm.pulse_saving .amp_p_litebox_button_zone {
+  display: none; }
+
+#pulse_registration .pulse_events_confirm.pulse_saving .pulse_events_confirm_processing {
+  display: block;
+  float: left;
+  text-align: center;
+  font-size: 24px;
+  color: #4269A2;
+  padding: 5px 0; }
+
+#pulse_registration .pulse_events_confirmed_free {
+  position: relative;
+  width: 370px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+#pulse_registration .pulse_events_declined_free {
+  position: relative;
+  width: 370px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+#pulse_registration .pulse_events_confirmed_paid {
+  position: relative;
+  width: 370px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+#pulse_registration .pulse_events_failed {
+  position: relative;
+  width: 370px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+#pulse_registration .pulse_paymentstatus {
+  color: #4269A2;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  float: left;
+  padding-bottom: 20px;
+  width: 100%; }
+
+#pulse_registration .pulse_events_unregister {
+  position: relative;
+  width: 370px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+.pulse_occurrence .pulse_occurrence_date {
+  color: #000;
+  font-size: 12px;
+  padding: 8px 0 3px;
+  font-weight: bold; }
+
+.pulse_occurrence {
+  margin: 0;
+  border-bottom: #e0e0e0 1px solid;
+  padding: 0 0 12px 0; }
+
+.amp_p_giving_amount_inprocess {
+  color: #888; }
+
+/***************************/
+/* Darren's Giving Changes */
+/***************************/
+.amp_p_giving_taxfree {
+  min-width: 23px;
+  height: 20px;
+  background: url(img/elexio/images/Gift.png) center center no-repeat; }
+
+table.amp_p_giving_history > tbody > tr > td.amp_p_imagecell {
+  padding: 0px;
+  vertical-align: middle; }
+
+.amp_p_giving_method_creditcard {
+  min-width: 32px;
+  height: 20px;
+  background: url(img/elexio/images/CreditCard.png) center center no-repeat; }
+
+.amp_p_giving_method_echeck {
+  min-width: 44px;
+  height: 20px;
+  background: url(img/elexio/images/eCheck.png) center center no-repeat; }
+
+.amp_p_giving_method_check {
+  min-width: 44px;
+  height: 20px;
+  background: url(img/elexio/images/Check.png) center center no-repeat; }
+
+.amp_p_giving_method_withimage {
+  cursor: pointer; }
+
+.amp_p_giving_method_cash {
+  min-width: 39px;
+  height: 20px;
+  background: url(img/elexio/images/Cash.png) center center no-repeat; }
+
+/* Email Group Lightbox Styles */
+.amp_p_emailgroup_actions {
+  position: absolute;
+  right: 13px;
+  top: -6px; }
+
+.amp_p_emailgroup_close_button {
+  background-image: url(img/elexio/"Images/Icon_close.png");
+  cursor: pointer;
+  height: 38px;
+  width: 38px;
+  text-align: center; }
+
+html.emailgroup {
+  width: 100%;
+  height: 100%; }
+
+.emailgroup body {
+  font-family: Tahoma;
+  width: 80%;
+  margin: 35px auto !important; }
+
+.emailgroup form > div {
+  margin-bottom: 5px; }
+
+.emailgroup #email_body {
+  height: 275px;
+  width: 375px;
+  border: 1px Solid #aaaaaa;
+  margin: 10px 0 0 70px;
+  padding: 5px;
+  overflow: auto; }
+
+.emailgroup label {
+  display: inline-block;
+  width: 60px;
+  text-align: right;
+  margin-right: 10px; }
+
+.emailgroup input {
+  width: 381px;
+  display: inline-block; }
+
+.emailgroup #wEmailAll {
+  background: url(img/elexio/"Images/button.png");
+  color: #000;
+  display: block;
+  float: right;
+  font-size: 12px;
+  height: 21px;
+  line-height: 19px;
+  margin-right: 55px;
+  text-align: center;
+  text-decoration: none;
+  width: 97px;
+  margin-top: 4px; }
+
+.emailgroup #wEmailAll:hover {
+  background-position: 0px -21px; }
+
+.emailgroup .amp_p_mailto {
+  text-align: right;
+  width: 441px;
+  font-size: 11px; }
